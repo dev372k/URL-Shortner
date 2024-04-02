@@ -1,0 +1,553 @@
+2023-09-20 00:25:57.651 +05:00 [INF] Now listening on: https://localhost:7224
+2023-09-20 00:25:57.694 +05:00 [INF] Now listening on: http://localhost:5091
+2023-09-20 00:25:57.701 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-20 00:25:57.702 +05:00 [INF] Hosting environment: Development
+2023-09-20 00:25:57.702 +05:00 [INF] Content root path: C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\
+2023-09-20 00:25:59.814 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.html - -
+2023-09-20 00:26:01.027 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - -
+2023-09-20 00:26:01.041 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 10.4000ms
+2023-09-20 00:26:01.041 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.html - - - 200 - text/html;charset=utf-8 1239.3150ms
+2023-09-20 00:26:01.342 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - -
+2023-09-20 00:26:01.404 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 61.7618ms
+2023-09-20 00:26:01.559 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - -
+2023-09-20 00:26:01.772 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 213.0370ms
+2023-09-20 00:29:40.912 +05:00 [INF] Now listening on: https://localhost:7224
+2023-09-20 00:29:40.958 +05:00 [INF] Now listening on: http://localhost:5091
+2023-09-20 00:29:40.965 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-20 00:29:40.966 +05:00 [INF] Hosting environment: Development
+2023-09-20 00:29:40.966 +05:00 [INF] Content root path: C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\
+2023-09-20 00:29:43.267 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.html - -
+2023-09-20 00:29:44.214 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.html - - - 200 - text/html;charset=utf-8 958.0351ms
+2023-09-20 00:29:44.454 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - -
+2023-09-20 00:29:44.464 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 9.7886ms
+2023-09-20 00:29:44.468 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - -
+2023-09-20 00:29:44.497 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 29.8140ms
+2023-09-20 00:29:44.716 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - -
+2023-09-20 00:29:44.865 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 148.9943ms
+2023-09-20 00:30:05.837 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/v1/Url application/json 72
+2023-09-20 00:30:05.847 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-20 00:30:05.879 +05:00 [INF] Route matched with {action = "Post", controller = "Url"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-20 00:30:06.976 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-20 00:30:08.595 +05:00 [ERR] Failed executing DbCommand (288ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Urls] ([CreatedOn], [ExpiryDateTime], [IsDeleted], [LongURL], [ShortURL], [UpdatedOn])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [Id]
+FROM [Urls]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-09-20 00:30:08.824 +05:00 [ERR] An exception occurred in the database while saving changes for context type 'ZipLink.Core.ApplicationDBContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Urls'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:9c462432-8dd1-43e6-b283-e176fe0daf18
+Error Number:208,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Urls'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:9c462432-8dd1-43e6-b283-e176fe0daf18
+Error Number:208,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2023-09-20 00:30:08.984 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Post (ZipLink.API) in 3098.0677ms
+2023-09-20 00:30:09.043 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-20 00:30:09.178 +05:00 [ERR] Error Message: Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Urls'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:9c462432-8dd1-43e6-b283-e176fe0daf18
+Error Number:208,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at ZipLink.Infrastructure.Interfaces.UrlServiceRepo.CreateURL(String url) in C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.Infrastructure\Interfaces\UrlServiceRepo.cs:line 41
+   at ZipLink.API.Controllers.UrlController.Post(String url) in C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\Controllers\UrlController.cs:line 21
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at ZipLink.API.Extensions.CustomMiddleware.Invoke(HttpContext context) in C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\Extensions\CustomMiddleware.cs:line 26
+ Error Detail: Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Urls'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:9c462432-8dd1-43e6-b283-e176fe0daf18
+Error Number:208,State:1,Class:16
+2023-09-20 00:30:09.202 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/v1/Url application/json 72 - 500 - application/json;+charset=utf-8 3365.4320ms
+2023-09-20 00:30:40.237 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-20 00:30:47.761 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-20 00:30:48.840 +05:00 [INF] Executed DbCommand (164ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+CREATE DATABASE [ZipLink_DB_Stg];
+2023-09-20 00:30:48.899 +05:00 [INF] Executed DbCommand (53ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [ZipLink_DB_Stg] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+2023-09-20 00:30:48.914 +05:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-09-20 00:30:49.010 +05:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+2023-09-20 00:30:49.012 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-09-20 00:30:49.033 +05:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-09-20 00:30:49.041 +05:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-09-20 00:30:49.059 +05:00 [INF] Applying migration '20230919193040_Initial Migration'.
+2023-09-20 00:30:49.081 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Urls] (
+    [Id] int NOT NULL IDENTITY,
+    [LongURL] nvarchar(max) NOT NULL,
+    [ShortURL] nvarchar(max) NOT NULL,
+    [ExpiryDateTime] datetime2 NOT NULL,
+    [CreatedOn] datetime2 NOT NULL,
+    [UpdatedOn] datetime2 NOT NULL,
+    [IsDeleted] bit NOT NULL,
+    CONSTRAINT [PK_Urls] PRIMARY KEY ([Id])
+);
+2023-09-20 00:30:49.085 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20230919193040_Initial Migration', N'6.0.15');
+2023-09-20 00:30:57.565 +05:00 [INF] Now listening on: https://localhost:7224
+2023-09-20 00:30:57.609 +05:00 [INF] Now listening on: http://localhost:5091
+2023-09-20 00:30:57.614 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-20 00:30:57.616 +05:00 [INF] Hosting environment: Development
+2023-09-20 00:30:57.616 +05:00 [INF] Content root path: C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\
+2023-09-20 00:31:00.381 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.html - -
+2023-09-20 00:31:01.454 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.html - - - 200 - text/html;charset=utf-8 1082.4476ms
+2023-09-20 00:31:02.692 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - -
+2023-09-20 00:31:02.694 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - -
+2023-09-20 00:31:02.782 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 73.8161ms
+2023-09-20 00:31:02.886 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 194.1373ms
+2023-09-20 00:31:04.147 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - -
+2023-09-20 00:31:04.974 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 827.4619ms
+2023-09-20 00:31:15.148 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/v1/Url application/json 72
+2023-09-20 00:31:15.161 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-20 00:31:15.189 +05:00 [INF] Route matched with {action = "Post", controller = "Url"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-20 00:31:20.129 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-20 00:31:21.715 +05:00 [INF] Executed DbCommand (70ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Urls] ([CreatedOn], [ExpiryDateTime], [IsDeleted], [LongURL], [ShortURL], [UpdatedOn])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [Id]
+FROM [Urls]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-09-20 00:31:33.490 +05:00 [INF] Executing OkObjectResult, writing value of type 'ZipLink.API.Models.JSONResponse'.
+2023-09-20 00:31:33.508 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Post (ZipLink.API) in 18310.9378ms
+2023-09-20 00:31:33.509 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-20 00:31:33.665 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: StatusCode cannot be set because the response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ThrowResponseAlreadyStartedException(String value)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.Microsoft.AspNetCore.Http.Features.IHttpResponseFeature.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_StatusCode(Int32 value)
+   at ZipLink.API.Extensions.CustomMiddleware.Invoke(HttpContext context) in C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\Extensions\CustomMiddleware.cs:line 33
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-09-20 00:31:33.769 +05:00 [WRN] The response has already started, the error page middleware will not be executed.
+2023-09-20 00:31:33.833 +05:00 [ERR] Connection id "0HMTP8RPE0TG7", Request id "0HMTP8RPE0TG7:00000001": An unhandled exception was thrown by the application.
+System.InvalidOperationException: StatusCode cannot be set because the response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ThrowResponseAlreadyStartedException(String value)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.Microsoft.AspNetCore.Http.Features.IHttpResponseFeature.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_StatusCode(Int32 value)
+   at ZipLink.API.Extensions.CustomMiddleware.Invoke(HttpContext context) in C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\Extensions\CustomMiddleware.cs:line 33
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2023-09-20 00:31:33.844 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/v1/Url application/json 72 - 200 - application/json;+charset=utf-8 18695.7398ms
+2023-09-20 00:32:30.958 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/api/v1/Url?url=https%3A%2F%2Flocalhost%3A7224%2F1aadb4341e2a457928b5842a84f - -
+2023-09-20 00:32:30.965 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Get (ZipLink.API)'
+2023-09-20 00:32:30.971 +05:00 [INF] Route matched with {action = "Get", controller = "Url"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-20 00:32:31.037 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-20 00:32:31.544 +05:00 [INF] Executed DbCommand (11ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedOn], [u].[ExpiryDateTime], [u].[IsDeleted], [u].[LongURL], [u].[ShortURL], [u].[UpdatedOn]
+FROM [Urls] AS [u]
+WHERE [u].[ShortURL] = @__url_0
+2023-09-20 00:32:31.558 +05:00 [INF] Executing RedirectResult, redirecting to https://drive.google.com/file/d/1dhqbVplP7Jda9Mbi7G9UJGh5MF40R4i8/view.
+2023-09-20 00:32:31.558 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Get (ZipLink.API) in 587.2917ms
+2023-09-20 00:32:31.558 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Get (ZipLink.API)'
+2023-09-20 00:32:31.559 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/api/v1/Url?url=https%3A%2F%2Flocalhost%3A7224%2F1aadb4341e2a457928b5842a84f - - - 401 0 - 601.0010ms
+2023-09-20 00:32:36.888 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/api/v1/Url?url=https%3A%2F%2Flocalhost%3A7224%2F1aadb4341e2a457928b5842a84f - -
+2023-09-20 00:32:36.888 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Get (ZipLink.API)'
+2023-09-20 00:32:36.889 +05:00 [INF] Route matched with {action = "Get", controller = "Url"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-20 00:32:36.900 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-20 00:32:36.906 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedOn], [u].[ExpiryDateTime], [u].[IsDeleted], [u].[LongURL], [u].[ShortURL], [u].[UpdatedOn]
+FROM [Urls] AS [u]
+WHERE [u].[ShortURL] = @__url_0
+2023-09-20 00:32:36.906 +05:00 [INF] Executing RedirectResult, redirecting to https://drive.google.com/file/d/1dhqbVplP7Jda9Mbi7G9UJGh5MF40R4i8/view.
+2023-09-20 00:32:36.906 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Get (ZipLink.API) in 17.2644ms
+2023-09-20 00:32:36.906 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Get (ZipLink.API)'
+2023-09-20 00:32:36.906 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/api/v1/Url?url=https%3A%2F%2Flocalhost%3A7224%2F1aadb4341e2a457928b5842a84f - - - 401 0 - 17.9282ms
+2023-09-20 00:32:53.434 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/api/v1/Url?url=https%3A%2F%2Flocalhost%3A7224%2F1aadb4341e2a457928b5842a84f - -
+2023-09-20 00:32:53.434 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Get (ZipLink.API)'
+2023-09-20 00:32:53.434 +05:00 [INF] Route matched with {action = "Get", controller = "Url"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-20 00:32:56.258 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-20 00:32:56.442 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedOn], [u].[ExpiryDateTime], [u].[IsDeleted], [u].[LongURL], [u].[ShortURL], [u].[UpdatedOn]
+FROM [Urls] AS [u]
+WHERE [u].[ShortURL] = @__url_0
+2023-09-20 00:33:01.077 +05:00 [INF] Executing RedirectResult, redirecting to https://drive.google.com/file/d/1dhqbVplP7Jda9Mbi7G9UJGh5MF40R4i8/view.
+2023-09-20 00:33:01.077 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Get (ZipLink.API) in 7642.7118ms
+2023-09-20 00:33:01.077 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Get (ZipLink.API)'
+2023-09-20 00:33:01.077 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/api/v1/Url?url=https%3A%2F%2Flocalhost%3A7224%2F1aadb4341e2a457928b5842a84f - - - 401 0 - 7643.2572ms
+2023-09-20 00:33:57.985 +05:00 [INF] Now listening on: https://localhost:7224
+2023-09-20 00:33:58.081 +05:00 [INF] Now listening on: http://localhost:5091
+2023-09-20 00:33:58.097 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-20 00:33:58.099 +05:00 [INF] Hosting environment: Development
+2023-09-20 00:33:58.099 +05:00 [INF] Content root path: C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\
+2023-09-20 00:33:59.547 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.html - -
+2023-09-20 00:34:01.431 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - -
+2023-09-20 00:34:01.477 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 40.2626ms
+2023-09-20 00:34:01.510 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.html - - - 200 - text/html;charset=utf-8 1983.2030ms
+2023-09-20 00:34:02.861 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - -
+2023-09-20 00:34:02.985 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 123.4204ms
+2023-09-20 00:34:03.724 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - -
+2023-09-20 00:34:03.913 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 188.9260ms
+2023-09-20 00:34:12.556 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/api/v1/Url?url=https%3A%2F%2Flocalhost%3A7224%2F1aadb4341e2a457928b5842a84f - -
+2023-09-20 00:34:14.183 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Get (ZipLink.API)'
+2023-09-20 00:34:14.217 +05:00 [INF] Route matched with {action = "Get", controller = "Url"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-20 00:34:16.152 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-20 00:34:17.397 +05:00 [INF] Executed DbCommand (69ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedOn], [u].[ExpiryDateTime], [u].[IsDeleted], [u].[LongURL], [u].[ShortURL], [u].[UpdatedOn]
+FROM [Urls] AS [u]
+WHERE [u].[ShortURL] = @__url_0
+2023-09-20 00:34:17.503 +05:00 [INF] Executing RedirectResult, redirecting to https://drive.google.com/file/d/1dhqbVplP7Jda9Mbi7G9UJGh5MF40R4i8/view.
+2023-09-20 00:34:17.511 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Get (ZipLink.API) in 3285.8705ms
+2023-09-20 00:34:17.511 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Get (ZipLink.API)'
+2023-09-20 00:34:17.520 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/api/v1/Url?url=https%3A%2F%2Flocalhost%3A7224%2F1aadb4341e2a457928b5842a84f - - - 302 0 - 4963.8448ms
+2023-09-20 00:34:46.150 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/v1/Url application/json 74
+2023-09-20 00:34:50.417 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-20 00:34:50.419 +05:00 [INF] Route matched with {action = "Post", controller = "Url"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-20 00:34:53.289 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-20 00:34:53.442 +05:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Urls] ([CreatedOn], [ExpiryDateTime], [IsDeleted], [LongURL], [ShortURL], [UpdatedOn])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [Id]
+FROM [Urls]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-09-20 00:34:53.502 +05:00 [INF] Executing OkObjectResult, writing value of type 'ZipLink.API.Models.JSONResponse'.
+2023-09-20 00:34:53.514 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Post (ZipLink.API) in 3095.1602ms
+2023-09-20 00:34:53.514 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-20 00:34:53.515 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/v1/Url application/json 74 - 200 - application/json;+charset=utf-8 7364.2450ms
+2023-09-20 11:12:17.062 +05:00 [INF] Now listening on: https://localhost:7224
+2023-09-20 11:12:17.163 +05:00 [INF] Now listening on: http://localhost:5091
+2023-09-20 11:12:17.179 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-20 11:12:17.181 +05:00 [INF] Hosting environment: Development
+2023-09-20 11:12:17.181 +05:00 [INF] Content root path: C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\
+2023-09-20 11:12:19.211 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.html - -
+2023-09-20 11:12:20.344 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - -
+2023-09-20 11:12:20.355 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.html - - - 200 - text/html;charset=utf-8 1157.1971ms
+2023-09-20 11:12:20.359 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 14.5513ms
+2023-09-20 11:12:20.690 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - -
+2023-09-20 11:12:20.817 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 127.7216ms
+2023-09-20 11:12:21.022 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - -
+2023-09-20 11:12:21.237 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 215.8802ms
+2023-09-20 11:12:58.750 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/v1/Url application/json 26
+2023-09-20 11:12:58.768 +05:00 [INF] CORS policy execution successful.
+2023-09-20 11:12:58.798 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-20 11:12:58.896 +05:00 [INF] Route matched with {action = "Post", controller = "Url"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-20 11:13:45.498 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-20 11:13:48.065 +05:00 [INF] Executed DbCommand (152ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Urls] AS [u]
+        WHERE [u].[ShortURL] = @__url_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-09-20 11:14:43.996 +05:00 [INF] Executed DbCommand (24ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Urls] AS [u]
+        WHERE [u].[ShortURL] = @__url_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-09-20 11:14:49.867 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Urls] AS [u]
+        WHERE [u].[ShortURL] = @__url_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-09-20 11:15:18.475 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Urls] AS [u]
+        WHERE [u].[ShortURL] = @__url_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-09-20 11:15:20.123 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Urls] AS [u]
+        WHERE [u].[ShortURL] = @__url_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-09-20 11:16:29.603 +05:00 [INF] Executed DbCommand (19ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Urls] AS [u]
+        WHERE [u].[ShortURL] = @__url_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-09-20 11:17:16.041 +05:00 [INF] Executed DbCommand (7ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Urls] AS [u]
+        WHERE [u].[ShortURL] = @__url_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-09-20 11:17:32.584 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Urls] AS [u]
+        WHERE [u].[ShortURL] = @__url_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-09-20 11:17:35.838 +05:00 [INF] Executed DbCommand (12ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Urls] AS [u]
+        WHERE [u].[ShortURL] = @__url_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-09-20 11:17:43.765 +05:00 [INF] Executed DbCommand (15ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Urls] ([CreatedOn], [ExpiryDateTime], [IsDeleted], [LongURL], [ShortURL], [UpdatedOn])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [Id]
+FROM [Urls]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-09-20 11:17:47.809 +05:00 [INF] Executing OkObjectResult, writing value of type 'ZipLink.API.Models.JSONResponse'.
+2023-09-20 11:17:47.854 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Post (ZipLink.API) in 288938.1081ms
+2023-09-20 11:17:47.855 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-20 11:17:47.878 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/v1/Url application/json 26 - 200 - application/json;+charset=utf-8 289127.8860ms
+2023-09-20 11:18:33.358 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/api/v1/Url?url=https%3A%2F%2Flocalhost%3A7224%2F062c3 - -
+2023-09-20 11:18:33.398 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Get (ZipLink.API)'
+2023-09-20 11:18:33.426 +05:00 [INF] Route matched with {action = "Get", controller = "Url"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-20 11:18:33.577 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-20 11:18:33.876 +05:00 [INF] Executed DbCommand (4ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedOn], [u].[ExpiryDateTime], [u].[IsDeleted], [u].[LongURL], [u].[ShortURL], [u].[UpdatedOn]
+FROM [Urls] AS [u]
+WHERE [u].[ShortURL] = @__url_0
+2023-09-20 11:18:33.906 +05:00 [INF] Executing RedirectResult, redirecting to https://www.youtube.com/.
+2023-09-20 11:18:33.907 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Get (ZipLink.API) in 480.6907ms
+2023-09-20 11:18:33.907 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Get (ZipLink.API)'
+2023-09-20 11:18:33.908 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/api/v1/Url?url=https%3A%2F%2Flocalhost%3A7224%2F062c3 - - - 302 0 - 549.5687ms
+2023-09-20 12:20:39.132 +05:00 [INF] Now listening on: https://localhost:7224
+2023-09-20 12:20:39.202 +05:00 [INF] Now listening on: http://localhost:5091
+2023-09-20 12:20:39.272 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-20 12:20:39.309 +05:00 [INF] Hosting environment: Development
+2023-09-20 12:20:39.326 +05:00 [INF] Content root path: C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\
+2023-09-20 12:20:40.194 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.html - -
+2023-09-20 12:20:41.628 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.html - - - 200 - text/html;charset=utf-8 1446.4095ms
+2023-09-20 12:20:41.631 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - -
+2023-09-20 12:20:41.657 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 25.8609ms
+2023-09-20 12:20:42.232 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - -
+2023-09-20 12:20:42.277 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 44.8473ms
+2023-09-20 12:20:42.562 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - -
+2023-09-20 12:20:42.719 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 157.1209ms
+2023-09-20 12:21:37.711 +05:00 [INF] Now listening on: https://localhost:7224
+2023-09-20 12:21:37.769 +05:00 [INF] Now listening on: http://localhost:5091
+2023-09-20 12:21:37.777 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-20 12:21:37.778 +05:00 [INF] Hosting environment: Development
+2023-09-20 12:21:37.778 +05:00 [INF] Content root path: C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\
+2023-09-20 12:21:39.232 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.html - -
+2023-09-20 12:21:40.075 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - -
+2023-09-20 12:21:40.082 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.html - - - 200 - text/html;charset=utf-8 857.3648ms
+2023-09-20 12:21:40.104 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 28.5578ms
+2023-09-20 12:21:40.539 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - -
+2023-09-20 12:21:40.615 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 76.0386ms
+2023-09-20 12:21:40.871 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - -
+2023-09-20 12:21:41.088 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 216.9576ms
+2023-09-20 12:21:50.030 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/health - -
+2023-09-20 12:21:54.463 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/health - - - 401 0 - 4433.2172ms
+2023-09-20 12:22:46.092 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.html - -
+2023-09-20 12:22:46.110 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.html - - - 200 - text/html;charset=utf-8 17.7125ms
+2023-09-20 12:22:46.163 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - -
+2023-09-20 12:22:46.163 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - -
+2023-09-20 12:22:46.163 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 0.3161ms
+2023-09-20 12:22:46.187 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 24.0717ms
+2023-09-20 12:22:54.280 +05:00 [INF] Now listening on: https://localhost:7224
+2023-09-20 12:22:55.034 +05:00 [INF] Now listening on: http://localhost:5091
+2023-09-20 12:22:55.053 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-20 12:22:55.056 +05:00 [INF] Hosting environment: Development
+2023-09-20 12:22:55.056 +05:00 [INF] Content root path: C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\
+2023-09-20 12:22:55.273 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.html - -
+2023-09-20 12:22:56.172 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - -
+2023-09-20 12:22:56.189 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 13.7750ms
+2023-09-20 12:22:56.196 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.html - - - 200 - text/html;charset=utf-8 937.9546ms
+2023-09-20 12:22:56.590 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - -
+2023-09-20 12:22:56.690 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 100.2087ms
+2023-09-20 12:22:56.937 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - -
+2023-09-20 12:22:57.167 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 230.1299ms
+2023-09-20 12:23:05.856 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/health - -
+2023-09-20 12:23:09.413 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/health - - - 401 0 - 3557.1941ms
+2023-09-20 12:23:18.298 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/health - -
+2023-09-20 12:23:27.354 +05:00 [INF] Executing endpoint 'Health checks'
+2023-09-20 12:23:27.470 +05:00 [INF] Executed endpoint 'Health checks'
+2023-09-20 12:23:27.470 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/health - - - 200 - application/json 9172.2538ms
+2023-09-20 12:24:37.495 +05:00 [INF] Now listening on: https://localhost:7224
+2023-09-20 12:24:38.005 +05:00 [INF] Now listening on: http://localhost:5091
+2023-09-20 12:24:38.017 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-20 12:24:38.018 +05:00 [INF] Hosting environment: Development
+2023-09-20 12:24:38.018 +05:00 [INF] Content root path: C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\
+2023-09-20 12:24:38.693 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.html - -
+2023-09-20 12:24:39.443 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - -
+2023-09-20 12:24:39.449 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.html - - - 200 - text/html;charset=utf-8 766.7735ms
+2023-09-20 12:24:39.466 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 23.0173ms
+2023-09-20 12:24:39.784 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - -
+2023-09-20 12:24:39.841 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 57.1384ms
+2023-09-20 12:24:40.184 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - -
+2023-09-20 12:24:43.613 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 3429.1379ms
+2023-09-20 12:24:44.719 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/health - -
+2023-09-20 12:24:48.490 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/health - - - 401 0 - 3771.6684ms
+2023-09-20 12:27:25.988 +05:00 [INF] Now listening on: https://localhost:7224
+2023-09-20 12:27:28.139 +05:00 [INF] Now listening on: http://localhost:5091
+2023-09-20 12:27:28.220 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-20 12:27:28.224 +05:00 [INF] Hosting environment: Development
+2023-09-20 12:27:28.225 +05:00 [INF] Content root path: C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\
+2023-09-20 12:27:29.012 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.html - -
+2023-09-20 12:27:29.907 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - -
+2023-09-20 12:27:29.921 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 13.1414ms
+2023-09-20 12:27:29.921 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.html - - - 200 - text/html;charset=utf-8 920.1387ms
+2023-09-20 12:27:30.276 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - -
+2023-09-20 12:27:30.318 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 41.7915ms
+2023-09-20 12:27:30.571 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - -
+2023-09-20 12:27:30.798 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 227.6878ms
+2023-09-20 12:27:52.054 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/api/v1/Base - -
+2023-09-20 12:27:54.970 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.BaseController.Get (ZipLink.API)'
+2023-09-20 12:27:54.999 +05:00 [INF] Route matched with {action = "Get", controller = "Base"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller ZipLink.API.Controllers.BaseController (ZipLink.API).
+2023-09-20 12:27:55.011 +05:00 [INF] Get Health Information: Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport
+2023-09-20 12:27:55.022 +05:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport'.
+2023-09-20 12:27:55.081 +05:00 [INF] Executed action ZipLink.API.Controllers.BaseController.Get (ZipLink.API) in 71.372ms
+2023-09-20 12:27:55.083 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.BaseController.Get (ZipLink.API)'
+2023-09-20 12:27:55.083 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/api/v1/Base - - - 200 - application/json;+charset=utf-8 3029.2400ms
+2023-09-20 12:29:14.220 +05:00 [INF] Now listening on: https://localhost:7224
+2023-09-20 12:29:14.274 +05:00 [INF] Now listening on: http://localhost:5091
+2023-09-20 12:29:14.283 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-20 12:29:14.284 +05:00 [INF] Hosting environment: Development
+2023-09-20 12:29:14.284 +05:00 [INF] Content root path: C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\
+2023-09-20 12:29:15.415 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.html - -
+2023-09-20 12:29:19.116 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.html - - - 200 - text/html;charset=utf-8 3761.3706ms
+2023-09-20 12:29:19.410 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - -
+2023-09-20 12:29:19.417 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 7.1525ms
+2023-09-20 12:29:19.423 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - -
+2023-09-20 12:29:19.446 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 23.5926ms
+2023-09-20 12:29:19.789 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - -
+2023-09-20 12:29:19.974 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 184.9172ms
+2023-09-20 12:29:30.328 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/api/v1/Base - -
+2023-09-20 12:29:30.342 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.BaseController.Ping (ZipLink.API)'
+2023-09-20 12:29:30.368 +05:00 [INF] Route matched with {action = "Ping", controller = "Base"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ping() on controller ZipLink.API.Controllers.BaseController (ZipLink.API).
+2023-09-20 13:13:56.426 +05:00 [INF] Now listening on: https://localhost:7224
+2023-09-20 13:13:56.506 +05:00 [INF] Now listening on: http://localhost:5091
+2023-09-20 13:13:56.516 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-20 13:13:56.517 +05:00 [INF] Hosting environment: Development
+2023-09-20 13:13:56.518 +05:00 [INF] Content root path: C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\
+2023-09-20 13:13:57.709 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.html - -
+2023-09-20 13:13:58.575 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - -
+2023-09-20 13:13:58.587 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 11.5854ms
+2023-09-20 13:13:58.587 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.html - - - 200 - text/html;charset=utf-8 887.4551ms
+2023-09-20 13:13:58.936 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - -
+2023-09-20 13:13:58.997 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 61.1910ms
+2023-09-20 13:13:59.277 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - -
+2023-09-20 13:13:59.466 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 189.6497ms
+2023-09-20 13:14:26.237 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/api/v1/Url?url=https%3A%2F%2Flocalhost%3A7224%2F778fbhjjn - -
+2023-09-20 13:14:26.253 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Get (ZipLink.API)'
+2023-09-20 13:14:26.294 +05:00 [INF] Route matched with {action = "Get", controller = "Url"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-20 13:14:27.310 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-20 13:14:28.428 +05:00 [INF] Executed DbCommand (81ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedOn], [u].[ExpiryDateTime], [u].[IsDeleted], [u].[LongURL], [u].[ShortURL], [u].[UpdatedOn]
+FROM [Urls] AS [u]
+WHERE [u].[ShortURL] = @__url_0
+2023-09-20 13:14:28.473 +05:00 [INF] Executing OkObjectResult, writing value of type 'ZipLink.API.Models.JSONResponse'.
+2023-09-20 13:14:28.492 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Get (ZipLink.API) in 2190.686ms
+2023-09-20 13:14:28.492 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Get (ZipLink.API)'
+2023-09-20 13:14:28.503 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/api/v1/Url?url=https%3A%2F%2Flocalhost%3A7224%2F778fbhjjn - - - 200 - application/json;+charset=utf-8 2266.4910ms

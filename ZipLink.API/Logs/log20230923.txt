@@ -1,0 +1,49 @@
+2023-09-23 11:49:56.389 +05:00 [INF] Now listening on: https://localhost:7224
+2023-09-23 11:49:56.494 +05:00 [INF] Now listening on: http://localhost:5091
+2023-09-23 11:49:56.506 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-23 11:49:56.508 +05:00 [INF] Hosting environment: Development
+2023-09-23 11:49:56.508 +05:00 [INF] Content root path: C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\
+2023-09-23 11:49:58.946 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.html - -
+2023-09-23 11:50:00.402 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.html - - - 200 - text/html;charset=utf-8 1475.3637ms
+2023-09-23 11:50:00.406 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - -
+2023-09-23 11:50:00.429 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 22.6604ms
+2023-09-23 11:50:00.826 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - -
+2023-09-23 11:50:01.010 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 184.2702ms
+2023-09-23 11:50:01.253 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - -
+2023-09-23 11:50:01.424 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 171.8413ms
+2023-09-23 11:50:52.647 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/api/v1/Base - -
+2023-09-23 11:51:02.105 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.BaseController.Ping (ZipLink.API)'
+2023-09-23 11:51:02.184 +05:00 [INF] Route matched with {action = "Ping", controller = "Base"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ping() on controller ZipLink.API.Controllers.BaseController (ZipLink.API).
+2023-09-23 11:51:04.229 +05:00 [INF] Get Health Information: Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport
+2023-09-23 11:51:04.252 +05:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport'.
+2023-09-23 11:51:04.322 +05:00 [INF] Executed action ZipLink.API.Controllers.BaseController.Ping (ZipLink.API) in 2127.4648ms
+2023-09-23 11:51:04.324 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.BaseController.Ping (ZipLink.API)'
+2023-09-23 11:51:04.324 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/api/v1/Base - - - 200 - application/json;+charset=utf-8 11677.6925ms
+2023-09-23 12:19:28.956 +05:00 [INF] Now listening on: https://localhost:7224
+2023-09-23 12:19:29.584 +05:00 [INF] Now listening on: http://localhost:5091
+2023-09-23 12:19:29.604 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-23 12:19:29.606 +05:00 [INF] Hosting environment: Development
+2023-09-23 12:19:29.606 +05:00 [INF] Content root path: C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\
+2023-09-23 12:19:31.321 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.html - -
+2023-09-23 12:19:32.580 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.html - - - 200 - text/html;charset=utf-8 1281.5001ms
+2023-09-23 12:19:33.315 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - -
+2023-09-23 12:19:33.315 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - -
+2023-09-23 12:19:33.331 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 16.5523ms
+2023-09-23 12:19:33.360 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 45.7864ms
+2023-09-23 12:19:37.765 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - -
+2023-09-23 12:19:38.048 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 282.1015ms
+2023-09-23 12:22:33.909 +05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7224/chat-hub - -
+2023-09-23 12:22:53.454 +05:00 [INF] Executing endpoint 'chat-hub'
+2023-09-23 18:26:50.063 +05:00 [INF] Executed endpoint 'chat-hub'
+2023-09-23 18:26:56.252 +05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7224/chat-hub - - - 101 - - 21874979.5340ms
+2023-09-23 18:27:11.919 +05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7224/chat-hub - -
+2023-09-23 18:27:11.930 +05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7224/chat-hub - - - 401 0 - 10.9772ms
+2023-09-23 18:27:50.825 +05:00 [INF] Now listening on: https://localhost:7224
+2023-09-23 18:27:50.988 +05:00 [INF] Now listening on: http://localhost:5091
+2023-09-23 18:27:51.014 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-23 18:27:51.019 +05:00 [INF] Hosting environment: Development
+2023-09-23 18:27:51.019 +05:00 [INF] Content root path: C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\
+2023-09-23 18:27:53.784 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.html - -
+2023-09-23 18:27:56.265 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - -
+2023-09-23 18:27:56.288 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.html - - - 200 - text/html;charset=utf-8 2525.8932ms
+2023-09-23 18:27:56.288 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 18.4914ms

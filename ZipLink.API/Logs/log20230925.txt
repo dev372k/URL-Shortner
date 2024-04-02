@@ -1,0 +1,1067 @@
+2023-09-25 00:38:52.089 +05:00 [INF] Now listening on: https://localhost:7224
+2023-09-25 00:38:52.358 +05:00 [INF] Now listening on: http://localhost:5091
+2023-09-25 00:38:52.411 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-25 00:38:52.424 +05:00 [INF] Hosting environment: Development
+2023-09-25 00:38:52.424 +05:00 [INF] Content root path: C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\
+2023-09-25 00:38:54.325 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.html - -
+2023-09-25 00:38:55.093 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - -
+2023-09-25 00:38:55.103 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.html - - - 200 - text/html;charset=utf-8 787.9566ms
+2023-09-25 00:38:55.105 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 11.8318ms
+2023-09-25 00:38:55.331 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - -
+2023-09-25 00:38:55.361 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 29.7918ms
+2023-09-25 00:38:55.580 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - -
+2023-09-25 00:38:55.814 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 234.3138ms
+2023-09-25 00:39:05.010 +05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/v1/url - -
+2023-09-25 00:39:05.019 +05:00 [INF] CORS policy execution successful.
+2023-09-25 00:39:05.022 +05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/v1/url - - - 204 - - 12.2609ms
+2023-09-25 00:39:05.025 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/v1/url application/json 2
+2023-09-25 00:39:05.027 +05:00 [INF] CORS policy execution successful.
+2023-09-25 00:39:21.246 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 00:39:21.285 +05:00 [INF] Route matched with {action = "Post", controller = "Url"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-25 00:39:21.885 +05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-09-25 00:39:21.927 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Post (ZipLink.API) in 630.3885ms
+2023-09-25 00:39:21.930 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 00:39:21.934 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/v1/url application/json 2 - 400 - application/problem+json;+charset=utf-8 16909.2933ms
+2023-09-25 00:40:29.395 +05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/v1/url - -
+2023-09-25 00:40:29.398 +05:00 [INF] CORS policy execution successful.
+2023-09-25 00:40:29.413 +05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/v1/url - - - 204 - - 18.8673ms
+2023-09-25 00:40:29.430 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/v1/url application/json 34
+2023-09-25 00:40:29.430 +05:00 [INF] CORS policy execution successful.
+2023-09-25 00:40:33.451 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 00:40:33.451 +05:00 [INF] Route matched with {action = "Post", controller = "Url"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-25 00:40:33.570 +05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-09-25 00:40:33.570 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Post (ZipLink.API) in 119.3197ms
+2023-09-25 00:40:33.571 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 00:40:37.968 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/v1/url application/json 34 - 400 - application/problem+json;+charset=utf-8 8538.1853ms
+2023-09-25 00:41:38.485 +05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/v1/url - -
+2023-09-25 00:41:38.485 +05:00 [INF] CORS policy execution successful.
+2023-09-25 00:41:38.485 +05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/v1/url - - - 204 - - 0.9686ms
+2023-09-25 00:41:38.488 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/v1/url text/plain;charset=UTF-8 33
+2023-09-25 00:41:38.488 +05:00 [INF] CORS policy execution successful.
+2023-09-25 00:41:41.815 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 00:41:41.815 +05:00 [INF] Route matched with {action = "Post", controller = "Url"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-25 00:41:41.822 +05:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2023-09-25 00:41:41.828 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Post (ZipLink.API) in 12.7915ms
+2023-09-25 00:41:41.828 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 00:41:43.965 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/v1/url text/plain;charset=UTF-8 33 - 415 - application/problem+json;+charset=utf-8 5477.1727ms
+2023-09-25 00:42:39.674 +05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/v1/url - -
+2023-09-25 00:42:39.675 +05:00 [INF] CORS policy execution successful.
+2023-09-25 00:42:39.675 +05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/v1/url - - - 204 - - 0.6551ms
+2023-09-25 00:42:39.677 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/v1/url application/json 15
+2023-09-25 00:42:39.677 +05:00 [INF] CORS policy execution successful.
+2023-09-25 00:42:41.732 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 00:42:41.732 +05:00 [INF] Route matched with {action = "Post", controller = "Url"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-25 00:42:41.852 +05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-09-25 00:42:41.852 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Post (ZipLink.API) in 120.197ms
+2023-09-25 00:42:41.852 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 00:42:41.852 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/v1/url application/json 15 - 400 - application/problem+json;+charset=utf-8 2175.0340ms
+2023-09-25 00:43:25.817 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/v1/Url application/json 26
+2023-09-25 00:43:25.818 +05:00 [INF] CORS policy execution successful.
+2023-09-25 00:43:28.134 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 00:43:28.135 +05:00 [INF] Route matched with {action = "Post", controller = "Url"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-25 00:43:29.823 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-25 00:43:31.999 +05:00 [INF] Executed DbCommand (149ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Urls] AS [u]
+        WHERE [u].[ShortURL] = @__url_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-09-25 00:43:32.311 +05:00 [INF] Executed DbCommand (26ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Int64), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Urls] ([CreatedOn], [ExpiryDateTime], [IsDeleted], [LongURL], [Numberofclicks], [ShortURL], [UpdatedOn])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [Id]
+FROM [Urls]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-09-25 00:43:32.372 +05:00 [INF] Executing OkObjectResult, writing value of type 'ZipLink.API.Models.Response'.
+2023-09-25 00:43:32.374 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Post (ZipLink.API) in 4239.3423ms
+2023-09-25 00:43:32.374 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 00:43:32.381 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/v1/Url application/json 26 - 200 - application/json;+charset=utf-8 6564.5014ms
+2023-09-25 00:44:25.804 +05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/v1/url - -
+2023-09-25 00:44:25.805 +05:00 [INF] CORS policy execution successful.
+2023-09-25 00:44:25.805 +05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/v1/url - - - 204 - - 0.6234ms
+2023-09-25 00:44:25.807 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/v1/url application/json 61
+2023-09-25 00:44:25.807 +05:00 [INF] CORS policy execution successful.
+2023-09-25 00:44:28.359 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 00:44:28.360 +05:00 [INF] Route matched with {action = "Post", controller = "Url"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-25 00:44:28.523 +05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-09-25 00:44:28.523 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Post (ZipLink.API) in 163.5125ms
+2023-09-25 00:44:28.524 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 00:44:28.524 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/v1/url application/json 61 - 400 - application/problem+json;+charset=utf-8 2717.2225ms
+2023-09-25 00:46:01.574 +05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7224/api/v1/Url application/json 63
+2023-09-25 00:46:04.617 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 00:46:04.618 +05:00 [INF] Route matched with {action = "Post", controller = "Url"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-25 00:46:06.905 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-25 00:46:06.922 +05:00 [INF] Executed DbCommand (12ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Urls] AS [u]
+        WHERE [u].[ShortURL] = @__url_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-09-25 00:46:06.927 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Int64), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Urls] ([CreatedOn], [ExpiryDateTime], [IsDeleted], [LongURL], [Numberofclicks], [ShortURL], [UpdatedOn])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [Id]
+FROM [Urls]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-09-25 00:46:06.929 +05:00 [INF] Executing OkObjectResult, writing value of type 'ZipLink.API.Models.Response'.
+2023-09-25 00:46:06.931 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Post (ZipLink.API) in 2313.8312ms
+2023-09-25 00:46:06.932 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 00:46:06.932 +05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7224/api/v1/Url application/json 63 - 200 - application/json;+charset=utf-8 5357.8218ms
+2023-09-25 00:46:51.338 +05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - -
+2023-09-25 00:46:51.339 +05:00 [INF] CORS policy execution successful.
+2023-09-25 00:46:51.339 +05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - - - 204 - - 2.0380ms
+2023-09-25 00:46:51.343 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/v1/Url application/json 49
+2023-09-25 00:46:51.343 +05:00 [INF] CORS policy execution successful.
+2023-09-25 00:46:53.677 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 00:46:53.678 +05:00 [INF] Route matched with {action = "Post", controller = "Url"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-25 00:46:55.274 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-25 00:46:55.278 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Urls] AS [u]
+        WHERE [u].[ShortURL] = @__url_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-09-25 00:46:55.282 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Int64), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Urls] ([CreatedOn], [ExpiryDateTime], [IsDeleted], [LongURL], [Numberofclicks], [ShortURL], [UpdatedOn])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [Id]
+FROM [Urls]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-09-25 00:46:55.283 +05:00 [INF] Executing OkObjectResult, writing value of type 'ZipLink.API.Models.Response'.
+2023-09-25 00:46:55.284 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Post (ZipLink.API) in 1605.997ms
+2023-09-25 00:46:55.284 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 00:46:55.284 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/v1/Url application/json 49 - 200 - application/json;+charset=utf-8 3940.9251ms
+2023-09-25 00:49:44.344 +05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - -
+2023-09-25 00:49:44.344 +05:00 [INF] CORS policy execution successful.
+2023-09-25 00:49:44.345 +05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - - - 204 - - 0.5571ms
+2023-09-25 00:49:44.356 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/v1/Url application/json 65
+2023-09-25 00:49:44.356 +05:00 [INF] CORS policy execution successful.
+2023-09-25 00:49:48.153 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 00:49:48.153 +05:00 [INF] Route matched with {action = "Post", controller = "Url"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-25 00:49:50.235 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-25 00:49:50.245 +05:00 [INF] Executed DbCommand (9ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Urls] AS [u]
+        WHERE [u].[ShortURL] = @__url_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-09-25 00:49:50.249 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Int64), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Urls] ([CreatedOn], [ExpiryDateTime], [IsDeleted], [LongURL], [Numberofclicks], [ShortURL], [UpdatedOn])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [Id]
+FROM [Urls]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-09-25 00:49:50.249 +05:00 [INF] Executing OkObjectResult, writing value of type 'ZipLink.API.Models.Response'.
+2023-09-25 00:49:50.249 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Post (ZipLink.API) in 2095.9565ms
+2023-09-25 00:49:50.249 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 00:49:50.250 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/v1/Url application/json 65 - 200 - application/json;+charset=utf-8 5893.3309ms
+2023-09-25 00:51:59.441 +05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - -
+2023-09-25 00:51:59.442 +05:00 [INF] CORS policy execution successful.
+2023-09-25 00:51:59.442 +05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - - - 204 - - 1.4265ms
+2023-09-25 00:51:59.462 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/v1/Url application/json 65
+2023-09-25 00:51:59.462 +05:00 [INF] CORS policy execution successful.
+2023-09-25 00:51:59.462 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 00:51:59.462 +05:00 [INF] Route matched with {action = "Post", controller = "Url"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-25 00:51:59.463 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-25 00:51:59.465 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Urls] AS [u]
+        WHERE [u].[ShortURL] = @__url_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-09-25 00:51:59.467 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Int64), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Urls] ([CreatedOn], [ExpiryDateTime], [IsDeleted], [LongURL], [Numberofclicks], [ShortURL], [UpdatedOn])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [Id]
+FROM [Urls]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-09-25 00:51:59.468 +05:00 [INF] Executing OkObjectResult, writing value of type 'ZipLink.API.Models.Response'.
+2023-09-25 00:51:59.468 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Post (ZipLink.API) in 5.9625ms
+2023-09-25 00:51:59.468 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 00:51:59.468 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/v1/Url application/json 65 - 200 - application/json;+charset=utf-8 6.5190ms
+2023-09-25 00:52:21.951 +05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - -
+2023-09-25 00:52:21.952 +05:00 [INF] CORS policy execution successful.
+2023-09-25 00:52:21.952 +05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - - - 204 - - 0.7104ms
+2023-09-25 00:52:21.959 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/v1/Url application/json 65
+2023-09-25 00:52:21.959 +05:00 [INF] CORS policy execution successful.
+2023-09-25 00:52:21.959 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 00:52:21.959 +05:00 [INF] Route matched with {action = "Post", controller = "Url"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-25 00:52:21.960 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-25 00:52:21.964 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Urls] AS [u]
+        WHERE [u].[ShortURL] = @__url_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-09-25 00:52:21.979 +05:00 [INF] Executed DbCommand (14ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Int64), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Urls] ([CreatedOn], [ExpiryDateTime], [IsDeleted], [LongURL], [Numberofclicks], [ShortURL], [UpdatedOn])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [Id]
+FROM [Urls]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-09-25 00:52:21.980 +05:00 [INF] Executing OkObjectResult, writing value of type 'ZipLink.API.Models.Response'.
+2023-09-25 00:52:21.980 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Post (ZipLink.API) in 21.3592ms
+2023-09-25 00:52:21.980 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 00:52:21.980 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/v1/Url application/json 65 - 200 - application/json;+charset=utf-8 22.1031ms
+2023-09-25 00:52:43.902 +05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - -
+2023-09-25 00:52:43.903 +05:00 [INF] CORS policy execution successful.
+2023-09-25 00:52:43.903 +05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - - - 204 - - 0.6782ms
+2023-09-25 00:52:43.905 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/v1/Url application/json 65
+2023-09-25 00:52:43.905 +05:00 [INF] CORS policy execution successful.
+2023-09-25 00:52:43.905 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 00:52:43.905 +05:00 [INF] Route matched with {action = "Post", controller = "Url"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-25 00:52:43.906 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-25 00:52:43.909 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Urls] AS [u]
+        WHERE [u].[ShortURL] = @__url_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-09-25 00:52:43.913 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Int64), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Urls] ([CreatedOn], [ExpiryDateTime], [IsDeleted], [LongURL], [Numberofclicks], [ShortURL], [UpdatedOn])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [Id]
+FROM [Urls]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-09-25 00:52:43.913 +05:00 [INF] Executing OkObjectResult, writing value of type 'ZipLink.API.Models.Response'.
+2023-09-25 00:52:43.913 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Post (ZipLink.API) in 8.3564ms
+2023-09-25 00:52:43.914 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 00:52:43.914 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/v1/Url application/json 65 - 200 - application/json;+charset=utf-8 8.9669ms
+2023-09-25 00:54:34.668 +05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - -
+2023-09-25 00:54:34.670 +05:00 [INF] CORS policy execution successful.
+2023-09-25 00:54:34.674 +05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - - - 204 - - 6.3417ms
+2023-09-25 00:54:34.708 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/v1/Url application/json 65
+2023-09-25 00:54:34.709 +05:00 [INF] CORS policy execution successful.
+2023-09-25 00:54:34.709 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 00:54:34.709 +05:00 [INF] Route matched with {action = "Post", controller = "Url"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-25 00:54:34.717 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-25 00:54:34.740 +05:00 [INF] Executed DbCommand (21ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Urls] AS [u]
+        WHERE [u].[ShortURL] = @__url_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-09-25 00:54:34.755 +05:00 [INF] Executed DbCommand (13ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Int64), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Urls] ([CreatedOn], [ExpiryDateTime], [IsDeleted], [LongURL], [Numberofclicks], [ShortURL], [UpdatedOn])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [Id]
+FROM [Urls]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-09-25 00:54:34.756 +05:00 [INF] Executing OkObjectResult, writing value of type 'ZipLink.API.Models.Response'.
+2023-09-25 00:54:34.757 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Post (ZipLink.API) in 47.233ms
+2023-09-25 00:54:34.757 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 00:54:34.757 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/v1/Url application/json 65 - 200 - application/json;+charset=utf-8 49.5872ms
+2023-09-25 00:55:05.303 +05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - -
+2023-09-25 00:55:05.304 +05:00 [INF] CORS policy execution successful.
+2023-09-25 00:55:05.304 +05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - - - 204 - - 0.6829ms
+2023-09-25 00:55:05.305 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/v1/Url application/json 65
+2023-09-25 00:55:05.306 +05:00 [INF] CORS policy execution successful.
+2023-09-25 00:55:05.306 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 00:55:05.309 +05:00 [INF] Route matched with {action = "Post", controller = "Url"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-25 00:55:05.312 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-25 00:55:05.321 +05:00 [INF] Executed DbCommand (8ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Urls] AS [u]
+        WHERE [u].[ShortURL] = @__url_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-09-25 00:55:05.324 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Int64), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Urls] ([CreatedOn], [ExpiryDateTime], [IsDeleted], [LongURL], [Numberofclicks], [ShortURL], [UpdatedOn])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [Id]
+FROM [Urls]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-09-25 00:55:05.326 +05:00 [INF] Executing OkObjectResult, writing value of type 'ZipLink.API.Models.Response'.
+2023-09-25 00:55:05.326 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Post (ZipLink.API) in 16.2895ms
+2023-09-25 00:55:05.326 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 00:55:05.326 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/v1/Url application/json 65 - 200 - application/json;+charset=utf-8 21.0830ms
+2023-09-25 00:56:57.149 +05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - -
+2023-09-25 00:56:57.150 +05:00 [INF] CORS policy execution successful.
+2023-09-25 00:56:57.150 +05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - - - 204 - - 0.9351ms
+2023-09-25 00:56:57.152 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/v1/Url application/json 57
+2023-09-25 00:56:57.152 +05:00 [INF] CORS policy execution successful.
+2023-09-25 00:56:57.152 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 00:56:57.153 +05:00 [INF] Route matched with {action = "Post", controller = "Url"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-25 00:56:57.153 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-25 00:56:57.201 +05:00 [INF] Executed DbCommand (48ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Urls] AS [u]
+        WHERE [u].[ShortURL] = @__url_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-09-25 00:56:57.204 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Int64), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Urls] ([CreatedOn], [ExpiryDateTime], [IsDeleted], [LongURL], [Numberofclicks], [ShortURL], [UpdatedOn])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [Id]
+FROM [Urls]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-09-25 00:56:57.204 +05:00 [INF] Executing OkObjectResult, writing value of type 'ZipLink.API.Models.Response'.
+2023-09-25 00:56:57.205 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Post (ZipLink.API) in 51.9319ms
+2023-09-25 00:56:57.205 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 00:56:57.205 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/v1/Url application/json 57 - 200 - application/json;+charset=utf-8 52.3668ms
+2023-09-25 00:57:56.587 +05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - -
+2023-09-25 00:57:56.590 +05:00 [INF] CORS policy execution successful.
+2023-09-25 00:57:56.595 +05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - - - 204 - - 8.2569ms
+2023-09-25 00:57:56.609 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/v1/Url application/json 88
+2023-09-25 00:57:56.609 +05:00 [INF] CORS policy execution successful.
+2023-09-25 00:57:56.609 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 00:57:56.609 +05:00 [INF] Route matched with {action = "Post", controller = "Url"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-25 00:57:56.610 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-25 00:57:56.615 +05:00 [INF] Executed DbCommand (4ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Urls] AS [u]
+        WHERE [u].[ShortURL] = @__url_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-09-25 00:57:56.617 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Int64), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Urls] ([CreatedOn], [ExpiryDateTime], [IsDeleted], [LongURL], [Numberofclicks], [ShortURL], [UpdatedOn])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [Id]
+FROM [Urls]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-09-25 00:57:56.618 +05:00 [INF] Executing OkObjectResult, writing value of type 'ZipLink.API.Models.Response'.
+2023-09-25 00:57:56.618 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Post (ZipLink.API) in 8.8092ms
+2023-09-25 00:57:56.618 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 00:57:56.618 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/v1/Url application/json 88 - 200 - application/json;+charset=utf-8 9.3784ms
+2023-09-25 00:58:27.340 +05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - -
+2023-09-25 00:58:27.340 +05:00 [INF] CORS policy execution successful.
+2023-09-25 00:58:27.341 +05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - - - 204 - - 1.4349ms
+2023-09-25 00:58:27.377 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/v1/Url application/json 69
+2023-09-25 00:58:27.378 +05:00 [INF] CORS policy execution successful.
+2023-09-25 00:58:27.379 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 00:58:27.379 +05:00 [INF] Route matched with {action = "Post", controller = "Url"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-25 00:58:27.380 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-25 00:58:27.387 +05:00 [INF] Executed DbCommand (7ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Urls] AS [u]
+        WHERE [u].[ShortURL] = @__url_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-09-25 00:58:27.391 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Int64), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Urls] ([CreatedOn], [ExpiryDateTime], [IsDeleted], [LongURL], [Numberofclicks], [ShortURL], [UpdatedOn])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [Id]
+FROM [Urls]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-09-25 00:58:27.391 +05:00 [INF] Executing OkObjectResult, writing value of type 'ZipLink.API.Models.Response'.
+2023-09-25 00:58:27.391 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Post (ZipLink.API) in 12.4062ms
+2023-09-25 00:58:27.391 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 00:58:27.392 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/v1/Url application/json 69 - 200 - application/json;+charset=utf-8 14.1035ms
+2023-09-25 01:01:02.208 +05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - -
+2023-09-25 01:01:02.209 +05:00 [INF] CORS policy execution successful.
+2023-09-25 01:01:02.209 +05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - - - 204 - - 1.5391ms
+2023-09-25 01:01:02.231 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/v1/Url application/json 57
+2023-09-25 01:01:02.231 +05:00 [INF] CORS policy execution successful.
+2023-09-25 01:01:02.231 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 01:01:02.231 +05:00 [INF] Route matched with {action = "Post", controller = "Url"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-25 01:01:02.232 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-25 01:01:02.241 +05:00 [INF] Executed DbCommand (8ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Urls] AS [u]
+        WHERE [u].[ShortURL] = @__url_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-09-25 01:01:02.244 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Int64), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Urls] ([CreatedOn], [ExpiryDateTime], [IsDeleted], [LongURL], [Numberofclicks], [ShortURL], [UpdatedOn])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [Id]
+FROM [Urls]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-09-25 01:01:02.245 +05:00 [INF] Executing OkObjectResult, writing value of type 'ZipLink.API.Models.Response'.
+2023-09-25 01:01:02.245 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Post (ZipLink.API) in 13.8329ms
+2023-09-25 01:01:02.245 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 01:01:02.245 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/v1/Url application/json 57 - 200 - application/json;+charset=utf-8 14.3026ms
+2023-09-25 01:01:51.730 +05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - -
+2023-09-25 01:01:51.730 +05:00 [INF] CORS policy execution successful.
+2023-09-25 01:01:51.730 +05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - - - 204 - - 0.3300ms
+2023-09-25 01:01:51.732 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/v1/Url application/json 57
+2023-09-25 01:01:51.732 +05:00 [INF] CORS policy execution successful.
+2023-09-25 01:01:51.732 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 01:01:51.732 +05:00 [INF] Route matched with {action = "Post", controller = "Url"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-25 01:01:51.737 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-25 01:01:51.739 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Urls] AS [u]
+        WHERE [u].[ShortURL] = @__url_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-09-25 01:01:51.742 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Int64), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Urls] ([CreatedOn], [ExpiryDateTime], [IsDeleted], [LongURL], [Numberofclicks], [ShortURL], [UpdatedOn])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [Id]
+FROM [Urls]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-09-25 01:01:51.742 +05:00 [INF] Executing OkObjectResult, writing value of type 'ZipLink.API.Models.Response'.
+2023-09-25 01:01:51.743 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Post (ZipLink.API) in 7.9128ms
+2023-09-25 01:01:51.743 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 01:01:51.743 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/v1/Url application/json 57 - 200 - application/json;+charset=utf-8 10.9108ms
+2023-09-25 01:02:28.890 +05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - -
+2023-09-25 01:02:28.891 +05:00 [INF] CORS policy execution successful.
+2023-09-25 01:02:28.891 +05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - - - 204 - - 1.3906ms
+2023-09-25 01:02:28.905 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/v1/Url application/json 57
+2023-09-25 01:02:28.905 +05:00 [INF] CORS policy execution successful.
+2023-09-25 01:02:28.905 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 01:02:28.905 +05:00 [INF] Route matched with {action = "Post", controller = "Url"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-25 01:02:28.906 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-25 01:02:28.908 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Urls] AS [u]
+        WHERE [u].[ShortURL] = @__url_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-09-25 01:02:28.911 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Int64), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Urls] ([CreatedOn], [ExpiryDateTime], [IsDeleted], [LongURL], [Numberofclicks], [ShortURL], [UpdatedOn])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [Id]
+FROM [Urls]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-09-25 01:02:28.912 +05:00 [INF] Executing OkObjectResult, writing value of type 'ZipLink.API.Models.Response'.
+2023-09-25 01:02:28.912 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Post (ZipLink.API) in 6.5725ms
+2023-09-25 01:02:28.912 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 01:02:28.912 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/v1/Url application/json 57 - 200 - application/json;+charset=utf-8 7.0587ms
+2023-09-25 01:03:47.669 +05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - -
+2023-09-25 01:03:47.669 +05:00 [INF] CORS policy execution successful.
+2023-09-25 01:03:47.670 +05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - - - 204 - - 1.1958ms
+2023-09-25 01:03:47.673 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/v1/Url application/json 57
+2023-09-25 01:03:47.675 +05:00 [INF] CORS policy execution successful.
+2023-09-25 01:03:47.675 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 01:03:47.675 +05:00 [INF] Route matched with {action = "Post", controller = "Url"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-25 01:03:47.676 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-25 01:03:47.678 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Urls] AS [u]
+        WHERE [u].[ShortURL] = @__url_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-09-25 01:03:47.681 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Int64), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Urls] ([CreatedOn], [ExpiryDateTime], [IsDeleted], [LongURL], [Numberofclicks], [ShortURL], [UpdatedOn])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [Id]
+FROM [Urls]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-09-25 01:03:47.683 +05:00 [INF] Executing OkObjectResult, writing value of type 'ZipLink.API.Models.Response'.
+2023-09-25 01:03:47.683 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Post (ZipLink.API) in 7.4007ms
+2023-09-25 01:03:47.683 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 01:03:47.683 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/v1/Url application/json 57 - 200 - application/json;+charset=utf-8 9.3728ms
+2023-09-25 01:05:33.961 +05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - -
+2023-09-25 01:05:33.962 +05:00 [INF] CORS policy execution successful.
+2023-09-25 01:05:33.962 +05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - - - 204 - - 0.4852ms
+2023-09-25 01:05:33.963 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/v1/Url application/json 57
+2023-09-25 01:05:33.963 +05:00 [INF] CORS policy execution successful.
+2023-09-25 01:05:33.963 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 01:05:33.963 +05:00 [INF] Route matched with {action = "Post", controller = "Url"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-25 01:05:33.964 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-25 01:05:33.972 +05:00 [INF] Executed DbCommand (8ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Urls] AS [u]
+        WHERE [u].[ShortURL] = @__url_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-09-25 01:05:33.975 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Int64), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Urls] ([CreatedOn], [ExpiryDateTime], [IsDeleted], [LongURL], [Numberofclicks], [ShortURL], [UpdatedOn])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [Id]
+FROM [Urls]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-09-25 01:05:33.977 +05:00 [INF] Executing OkObjectResult, writing value of type 'ZipLink.API.Models.Response'.
+2023-09-25 01:05:33.977 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Post (ZipLink.API) in 14.3298ms
+2023-09-25 01:05:33.977 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 01:05:33.978 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/v1/Url application/json 57 - 200 - application/json;+charset=utf-8 14.8861ms
+2023-09-25 01:07:37.443 +05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - -
+2023-09-25 01:07:37.443 +05:00 [INF] CORS policy execution successful.
+2023-09-25 01:07:37.444 +05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - - - 204 - - 0.3279ms
+2023-09-25 01:07:37.449 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/v1/Url application/json 57
+2023-09-25 01:07:37.449 +05:00 [INF] CORS policy execution successful.
+2023-09-25 01:07:37.449 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 01:07:37.449 +05:00 [INF] Route matched with {action = "Post", controller = "Url"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-25 01:07:37.453 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-25 01:07:37.462 +05:00 [INF] Executed DbCommand (9ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Urls] AS [u]
+        WHERE [u].[ShortURL] = @__url_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-09-25 01:07:37.469 +05:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Int64), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Urls] ([CreatedOn], [ExpiryDateTime], [IsDeleted], [LongURL], [Numberofclicks], [ShortURL], [UpdatedOn])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [Id]
+FROM [Urls]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-09-25 01:07:37.469 +05:00 [INF] Executing OkObjectResult, writing value of type 'ZipLink.API.Models.Response'.
+2023-09-25 01:07:37.469 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Post (ZipLink.API) in 20.2214ms
+2023-09-25 01:07:37.470 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 01:07:37.470 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/v1/Url application/json 57 - 200 - application/json;+charset=utf-8 20.8199ms
+2023-09-25 01:07:57.456 +05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - -
+2023-09-25 01:07:57.456 +05:00 [INF] CORS policy execution successful.
+2023-09-25 01:07:57.457 +05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - - - 204 - - 0.7485ms
+2023-09-25 01:07:57.464 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/v1/Url application/json 57
+2023-09-25 01:07:57.464 +05:00 [INF] CORS policy execution successful.
+2023-09-25 01:07:57.464 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 01:07:57.464 +05:00 [INF] Route matched with {action = "Post", controller = "Url"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-25 01:07:57.464 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-25 01:07:57.472 +05:00 [INF] Executed DbCommand (7ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Urls] AS [u]
+        WHERE [u].[ShortURL] = @__url_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-09-25 01:07:57.475 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Int64), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Urls] ([CreatedOn], [ExpiryDateTime], [IsDeleted], [LongURL], [Numberofclicks], [ShortURL], [UpdatedOn])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [Id]
+FROM [Urls]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-09-25 01:07:57.478 +05:00 [INF] Executing OkObjectResult, writing value of type 'ZipLink.API.Models.Response'.
+2023-09-25 01:07:57.478 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Post (ZipLink.API) in 14.0177ms
+2023-09-25 01:07:57.478 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 01:07:57.478 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/v1/Url application/json 57 - 200 - application/json;+charset=utf-8 14.5037ms
+2023-09-25 01:08:19.739 +05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - -
+2023-09-25 01:08:19.739 +05:00 [INF] CORS policy execution successful.
+2023-09-25 01:08:19.739 +05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - - - 204 - - 0.7924ms
+2023-09-25 01:08:19.741 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/v1/Url application/json 57
+2023-09-25 01:08:19.741 +05:00 [INF] CORS policy execution successful.
+2023-09-25 01:08:19.741 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 01:08:19.741 +05:00 [INF] Route matched with {action = "Post", controller = "Url"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-25 01:08:19.742 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-25 01:08:19.749 +05:00 [INF] Executed DbCommand (7ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Urls] AS [u]
+        WHERE [u].[ShortURL] = @__url_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-09-25 01:08:19.753 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Int64), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Urls] ([CreatedOn], [ExpiryDateTime], [IsDeleted], [LongURL], [Numberofclicks], [ShortURL], [UpdatedOn])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [Id]
+FROM [Urls]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-09-25 01:08:19.754 +05:00 [INF] Executing OkObjectResult, writing value of type 'ZipLink.API.Models.Response'.
+2023-09-25 01:08:19.754 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Post (ZipLink.API) in 13.3567ms
+2023-09-25 01:08:19.755 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 01:08:19.755 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/v1/Url application/json 57 - 200 - application/json;+charset=utf-8 14.0927ms
+2023-09-25 12:18:59.115 +05:00 [INF] Now listening on: https://localhost:7224
+2023-09-25 12:18:59.166 +05:00 [INF] Now listening on: http://localhost:5091
+2023-09-25 12:18:59.173 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-25 12:18:59.174 +05:00 [INF] Hosting environment: Development
+2023-09-25 12:18:59.175 +05:00 [INF] Content root path: C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\
+2023-09-25 12:19:00.968 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.html - -
+2023-09-25 12:19:01.986 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - -
+2023-09-25 12:19:01.998 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.html - - - 200 - text/html;charset=utf-8 1043.1817ms
+2023-09-25 12:19:01.998 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 10.3431ms
+2023-09-25 12:19:02.384 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - -
+2023-09-25 12:19:02.442 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 58.5243ms
+2023-09-25 12:19:02.903 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - -
+2023-09-25 12:19:03.112 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 208.9370ms
+2023-09-25 12:19:31.358 +05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - -
+2023-09-25 12:19:31.388 +05:00 [INF] CORS policy execution successful.
+2023-09-25 12:19:31.392 +05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - - - 204 - - 33.6017ms
+2023-09-25 12:19:31.394 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/v1/Url application/json 49
+2023-09-25 12:19:31.396 +05:00 [INF] CORS policy execution successful.
+2023-09-25 12:19:31.411 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 12:19:31.458 +05:00 [INF] Route matched with {action = "Post", controller = "Url"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-25 12:19:32.770 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-25 12:19:34.532 +05:00 [INF] Executed DbCommand (187ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Urls] AS [u]
+        WHERE [u].[ShortURL] = @__url_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-09-25 12:19:34.960 +05:00 [INF] Executed DbCommand (36ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Int64), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Urls] ([CreatedOn], [ExpiryDateTime], [IsDeleted], [LongURL], [Numberofclicks], [ShortURL], [UpdatedOn])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [Id]
+FROM [Urls]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-09-25 12:19:35.047 +05:00 [INF] Executing OkObjectResult, writing value of type 'ZipLink.API.Models.Response'.
+2023-09-25 12:19:35.073 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Post (ZipLink.API) in 3606.5773ms
+2023-09-25 12:19:35.074 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 12:19:35.085 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/v1/Url application/json 49 - 200 - application/json;+charset=utf-8 3690.4778ms
+2023-09-25 12:19:49.029 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/2a0017fa - -
+2023-09-25 12:19:49.039 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/2a0017fa - - - 401 0 - 11.6175ms
+2023-09-25 12:21:01.263 +05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - -
+2023-09-25 12:21:01.264 +05:00 [INF] CORS policy execution successful.
+2023-09-25 12:21:01.264 +05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - - - 204 - - 1.5619ms
+2023-09-25 12:21:01.282 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/v1/Url application/json 49
+2023-09-25 12:21:01.283 +05:00 [INF] CORS policy execution successful.
+2023-09-25 12:21:01.283 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 12:21:01.283 +05:00 [INF] Route matched with {action = "Post", controller = "Url"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-25 12:21:01.330 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-25 12:21:01.340 +05:00 [INF] Executed DbCommand (6ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Urls] AS [u]
+        WHERE [u].[ShortURL] = @__url_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-09-25 12:21:01.344 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Int64), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Urls] ([CreatedOn], [ExpiryDateTime], [IsDeleted], [LongURL], [Numberofclicks], [ShortURL], [UpdatedOn])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [Id]
+FROM [Urls]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-09-25 12:21:01.347 +05:00 [INF] Executing OkObjectResult, writing value of type 'ZipLink.API.Models.Response'.
+2023-09-25 12:21:01.347 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Post (ZipLink.API) in 64.1957ms
+2023-09-25 12:21:01.347 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 12:21:01.348 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/v1/Url application/json 49 - 200 - application/json;+charset=utf-8 65.1957ms
+2023-09-25 12:22:17.831 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/9ed59a73 - -
+2023-09-25 12:22:17.865 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/9ed59a73 - - - 401 0 - 38.3891ms
+2023-09-25 12:22:26.614 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/9ed59a73 - -
+2023-09-25 12:23:15.474 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/9ed59a73 - - - 401 0 - 48852.0377ms
+2023-09-25 21:31:02.426 +05:00 [INF] Now listening on: https://localhost:7224
+2023-09-25 21:31:02.484 +05:00 [INF] Now listening on: http://localhost:5091
+2023-09-25 21:31:02.494 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-25 21:31:02.495 +05:00 [INF] Hosting environment: Development
+2023-09-25 21:31:02.496 +05:00 [INF] Content root path: C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\
+2023-09-25 21:31:04.486 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.html - -
+2023-09-25 21:31:06.186 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.html - - - 200 - text/html;charset=utf-8 1710.2151ms
+2023-09-25 21:31:07.272 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - -
+2023-09-25 21:31:07.286 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 13.6611ms
+2023-09-25 21:31:07.301 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - -
+2023-09-25 21:31:07.421 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 120.4669ms
+2023-09-25 21:31:07.766 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - -
+2023-09-25 21:31:07.944 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 178.1555ms
+2023-09-25 21:32:56.246 +05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - -
+2023-09-25 21:32:56.261 +05:00 [INF] CORS policy execution successful.
+2023-09-25 21:32:56.266 +05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - - - 204 - - 19.9082ms
+2023-09-25 21:32:56.283 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/v1/Url application/json 57
+2023-09-25 21:32:56.285 +05:00 [INF] CORS policy execution successful.
+2023-09-25 21:32:56.300 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 21:32:56.384 +05:00 [INF] Route matched with {action = "Post", controller = "Url"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-25 21:32:58.364 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-25 21:33:00.656 +05:00 [INF] Executed DbCommand (159ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Urls] AS [u]
+        WHERE [u].[ShortURL] = @__url_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-09-25 21:33:01.362 +05:00 [INF] Executed DbCommand (11ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Int64), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Urls] ([CreatedOn], [ExpiryDateTime], [IsDeleted], [LongURL], [Numberofclicks], [ShortURL], [UpdatedOn])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [Id]
+FROM [Urls]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-09-25 21:33:01.499 +05:00 [INF] Executing OkObjectResult, writing value of type 'ZipLink.API.Models.Response'.
+2023-09-25 21:33:01.545 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Post (ZipLink.API) in 5138.0309ms
+2023-09-25 21:33:01.546 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 21:33:01.564 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/v1/Url application/json 57 - 200 - application/json;+charset=utf-8 5280.9699ms
+2023-09-25 21:44:10.343 +05:00 [INF] Now listening on: https://localhost:7224
+2023-09-25 21:44:10.433 +05:00 [INF] Now listening on: http://localhost:5091
+2023-09-25 21:44:10.453 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-25 21:44:10.454 +05:00 [INF] Hosting environment: Development
+2023-09-25 21:44:10.454 +05:00 [INF] Content root path: C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\
+2023-09-25 21:44:11.815 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.html - -
+2023-09-25 21:44:12.999 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - -
+2023-09-25 21:44:13.026 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 24.3216ms
+2023-09-25 21:44:13.072 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.html - - - 200 - text/html;charset=utf-8 1269.5313ms
+2023-09-25 21:44:13.324 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - -
+2023-09-25 21:44:13.371 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 46.5979ms
+2023-09-25 21:44:13.654 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - -
+2023-09-25 21:44:13.943 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 288.7460ms
+2023-09-25 21:44:41.421 +05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - -
+2023-09-25 21:44:41.456 +05:00 [INF] CORS policy execution successful.
+2023-09-25 21:44:41.462 +05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - - - 204 - - 40.7026ms
+2023-09-25 21:44:41.464 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/v1/Url application/json 65
+2023-09-25 21:44:41.467 +05:00 [INF] CORS policy execution successful.
+2023-09-25 21:44:41.482 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 21:44:41.545 +05:00 [INF] Route matched with {action = "Post", controller = "Url"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-25 21:44:43.832 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-25 21:44:46.744 +05:00 [INF] Executed DbCommand (183ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Urls] AS [u]
+        WHERE [u].[ShortURL] = @__url_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-09-25 21:44:47.684 +05:00 [INF] Executed DbCommand (10ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Int64), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Urls] ([CreatedOn], [ExpiryDateTime], [IsDeleted], [LongURL], [Numberofclicks], [ShortURL], [UpdatedOn])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [Id]
+FROM [Urls]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-09-25 21:44:47.827 +05:00 [INF] Executing OkObjectResult, writing value of type 'ZipLink.API.Models.Response'.
+2023-09-25 21:44:47.879 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Post (ZipLink.API) in 6306.1058ms
+2023-09-25 21:44:47.881 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 21:44:47.901 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/v1/Url application/json 65 - 200 - application/json;+charset=utf-8 6436.5488ms
+2023-09-25 21:44:54.709 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/e86f0cae - -
+2023-09-25 21:44:54.712 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/e86f0cae - - - 404 0 - 3.9620ms
+2023-09-25 22:07:51.297 +05:00 [INF] Now listening on: https://localhost:7224
+2023-09-25 22:07:51.369 +05:00 [INF] Now listening on: http://localhost:5091
+2023-09-25 22:07:51.383 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-25 22:07:51.384 +05:00 [INF] Hosting environment: Development
+2023-09-25 22:07:51.385 +05:00 [INF] Content root path: C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\
+2023-09-25 22:07:52.502 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.html - -
+2023-09-25 22:07:53.836 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.html - - - 200 - text/html;charset=utf-8 1347.5702ms
+2023-09-25 22:07:54.526 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - -
+2023-09-25 22:07:54.541 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 14.0944ms
+2023-09-25 22:07:54.615 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - -
+2023-09-25 22:07:54.737 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 121.5441ms
+2023-09-25 22:07:55.220 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - -
+2023-09-25 22:07:55.429 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 209.3656ms
+2023-09-25 22:09:24.232 +05:00 [INF] Now listening on: https://localhost:7224
+2023-09-25 22:09:24.288 +05:00 [INF] Now listening on: http://localhost:5091
+2023-09-25 22:09:24.297 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-25 22:09:24.298 +05:00 [INF] Hosting environment: Development
+2023-09-25 22:09:24.298 +05:00 [INF] Content root path: C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\
+2023-09-25 22:09:25.712 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.html - -
+2023-09-25 22:09:26.905 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - -
+2023-09-25 22:09:26.916 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.html - - - 200 - text/html;charset=utf-8 1216.2082ms
+2023-09-25 22:09:26.920 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 12.9399ms
+2023-09-25 22:09:27.323 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - -
+2023-09-25 22:09:27.380 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 56.6342ms
+2023-09-25 22:09:27.638 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - -
+2023-09-25 22:09:27.886 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 248.5810ms
+2023-09-25 22:09:36.721 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/e86f0cae - -
+2023-09-25 22:09:36.750 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Get (ZipLink.API)'
+2023-09-25 22:09:36.852 +05:00 [INF] Route matched with {action = "Get", controller = "Url"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-25 22:09:43.840 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-25 22:09:47.864 +05:00 [INF] Executed DbCommand (204ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedOn], [u].[ExpiryDateTime], [u].[IsDeleted], [u].[LongURL], [u].[Numberofclicks], [u].[ShortURL], [u].[UpdatedOn]
+FROM [Urls] AS [u]
+WHERE (([u].[ShortURL] = @__url_0) AND ([u].[IsDeleted] = CAST(0 AS bit))) AND ([u].[ExpiryDateTime] > GETDATE())
+2023-09-25 22:09:55.358 +05:00 [INF] Executed DbCommand (263ms) [Parameters=[@p7='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Int64), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Urls] SET [CreatedOn] = @p0, [ExpiryDateTime] = @p1, [IsDeleted] = @p2, [LongURL] = @p3, [Numberofclicks] = @p4, [ShortURL] = @p5, [UpdatedOn] = @p6
+WHERE [Id] = @p7;
+SELECT @@ROWCOUNT;
+2023-09-25 22:09:59.725 +05:00 [INF] Executing OkObjectResult, writing value of type 'ZipLink.API.Models.Response'.
+2023-09-25 22:09:59.766 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Get (ZipLink.API) in 22896.0828ms
+2023-09-25 22:09:59.771 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Get (ZipLink.API)'
+2023-09-25 22:09:59.796 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/e86f0cae - - - 200 - application/json;+charset=utf-8 23075.6447ms
+2023-09-25 22:10:00.876 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/favicon.ico - -
+2023-09-25 22:10:00.876 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Get (ZipLink.API)'
+2023-09-25 22:10:00.877 +05:00 [INF] Route matched with {action = "Get", controller = "Url"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-25 22:10:15.948 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-25 22:10:15.958 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedOn], [u].[ExpiryDateTime], [u].[IsDeleted], [u].[LongURL], [u].[Numberofclicks], [u].[ShortURL], [u].[UpdatedOn]
+FROM [Urls] AS [u]
+WHERE (([u].[ShortURL] = @__url_0) AND ([u].[IsDeleted] = CAST(0 AS bit))) AND ([u].[ExpiryDateTime] > GETDATE())
+2023-09-25 22:11:30.719 +05:00 [INF] Now listening on: https://localhost:7224
+2023-09-25 22:11:30.847 +05:00 [INF] Now listening on: http://localhost:5091
+2023-09-25 22:11:30.861 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-25 22:11:30.864 +05:00 [INF] Hosting environment: Development
+2023-09-25 22:11:30.864 +05:00 [INF] Content root path: C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\
+2023-09-25 22:11:32.053 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.html - -
+2023-09-25 22:11:33.029 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.html - - - 200 - text/html;charset=utf-8 986.7637ms
+2023-09-25 22:11:33.614 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - -
+2023-09-25 22:11:33.629 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 14.2343ms
+2023-09-25 22:11:33.638 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - -
+2023-09-25 22:11:33.690 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 51.5676ms
+2023-09-25 22:11:34.169 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - -
+2023-09-25 22:11:34.404 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 235.4968ms
+2023-09-25 22:12:04.422 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/e86f0cae - -
+2023-09-25 22:12:04.440 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Get (ZipLink.API)'
+2023-09-25 22:12:04.523 +05:00 [INF] Route matched with {action = "Get", controller = "Url"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-25 22:12:07.395 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-25 22:12:10.187 +05:00 [INF] Executed DbCommand (213ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedOn], [u].[ExpiryDateTime], [u].[IsDeleted], [u].[LongURL], [u].[Numberofclicks], [u].[ShortURL], [u].[UpdatedOn]
+FROM [Urls] AS [u]
+WHERE (([u].[ShortURL] = @__url_0) AND ([u].[IsDeleted] = CAST(0 AS bit))) AND ([u].[ExpiryDateTime] > GETDATE())
+2023-09-25 22:12:11.029 +05:00 [INF] Executed DbCommand (114ms) [Parameters=[@p7='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Int64), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Urls] SET [CreatedOn] = @p0, [ExpiryDateTime] = @p1, [IsDeleted] = @p2, [LongURL] = @p3, [Numberofclicks] = @p4, [ShortURL] = @p5, [UpdatedOn] = @p6
+WHERE [Id] = @p7;
+SELECT @@ROWCOUNT;
+2023-09-25 22:12:11.193 +05:00 [INF] Executing RedirectResult, redirecting to https://getbootstrap.com/docs/5.3/getting-started/introduction/.
+2023-09-25 22:12:11.214 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Get (ZipLink.API) in 6673.1837ms
+2023-09-25 22:12:11.219 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Get (ZipLink.API)'
+2023-09-25 22:12:11.254 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/e86f0cae - - - 302 0 - 6831.6271ms
+2023-09-25 22:13:14.556 +05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - -
+2023-09-25 22:13:14.598 +05:00 [INF] CORS policy execution successful.
+2023-09-25 22:13:14.602 +05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - - - 204 - - 46.0998ms
+2023-09-25 22:13:14.604 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/v1/Url application/json 68
+2023-09-25 22:13:14.606 +05:00 [INF] CORS policy execution successful.
+2023-09-25 22:13:14.607 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 22:13:14.609 +05:00 [INF] Route matched with {action = "Post", controller = "Url"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-25 22:13:14.775 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-25 22:13:14.912 +05:00 [INF] Executed DbCommand (57ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Urls] AS [u]
+        WHERE [u].[ShortURL] = @__url_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-09-25 22:13:15.051 +05:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Int64), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Urls] ([CreatedOn], [ExpiryDateTime], [IsDeleted], [LongURL], [Numberofclicks], [ShortURL], [UpdatedOn])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [Id]
+FROM [Urls]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-09-25 22:13:15.236 +05:00 [INF] Executing OkObjectResult, writing value of type 'ZipLink.API.Models.Response'.
+2023-09-25 22:13:15.282 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Post (ZipLink.API) in 672.4048ms
+2023-09-25 22:13:15.282 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 22:13:15.283 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/v1/Url application/json 68 - 200 - application/json;+charset=utf-8 678.5872ms
+2023-09-25 22:13:23.216 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/b3448902 - -
+2023-09-25 22:13:23.218 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Get (ZipLink.API)'
+2023-09-25 22:13:23.218 +05:00 [INF] Route matched with {action = "Get", controller = "Url"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-25 22:13:23.246 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-25 22:13:23.265 +05:00 [INF] Executed DbCommand (5ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedOn], [u].[ExpiryDateTime], [u].[IsDeleted], [u].[LongURL], [u].[Numberofclicks], [u].[ShortURL], [u].[UpdatedOn]
+FROM [Urls] AS [u]
+WHERE (([u].[ShortURL] = @__url_0) AND ([u].[IsDeleted] = CAST(0 AS bit))) AND ([u].[ExpiryDateTime] > GETDATE())
+2023-09-25 22:13:23.275 +05:00 [INF] Executed DbCommand (8ms) [Parameters=[@p7='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Int64), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Urls] SET [CreatedOn] = @p0, [ExpiryDateTime] = @p1, [IsDeleted] = @p2, [LongURL] = @p3, [Numberofclicks] = @p4, [ShortURL] = @p5, [UpdatedOn] = @p6
+WHERE [Id] = @p7;
+SELECT @@ROWCOUNT;
+2023-09-25 22:13:23.276 +05:00 [INF] Executing RedirectResult, redirecting to https://www.youtube.com/watch?v=k8-Chcvn1FY&ab_channel=Jonas_Macht.
+2023-09-25 22:13:23.277 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Get (ZipLink.API) in 58.5034ms
+2023-09-25 22:13:23.277 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Get (ZipLink.API)'
+2023-09-25 22:13:23.277 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/b3448902 - - - 302 0 - 61.6618ms
+2023-09-25 22:23:55.135 +05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - -
+2023-09-25 22:23:55.136 +05:00 [INF] CORS policy execution successful.
+2023-09-25 22:23:55.137 +05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - - - 204 - - 2.2521ms
+2023-09-25 22:23:55.154 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/v1/Url application/json 68
+2023-09-25 22:23:55.154 +05:00 [INF] CORS policy execution successful.
+2023-09-25 22:23:55.155 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 22:23:55.155 +05:00 [INF] Route matched with {action = "Post", controller = "Url"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-25 22:23:55.157 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-25 22:23:55.184 +05:00 [INF] Executed DbCommand (15ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Urls] AS [u]
+        WHERE [u].[ShortURL] = @__url_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-09-25 22:23:55.190 +05:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Int64), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Urls] ([CreatedOn], [ExpiryDateTime], [IsDeleted], [LongURL], [Numberofclicks], [ShortURL], [UpdatedOn])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [Id]
+FROM [Urls]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-09-25 22:23:55.197 +05:00 [INF] Executing OkObjectResult, writing value of type 'ZipLink.API.Models.Response'.
+2023-09-25 22:23:55.198 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Post (ZipLink.API) in 42.7621ms
+2023-09-25 22:23:55.198 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 22:23:55.198 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/v1/Url application/json 68 - 200 - application/json;+charset=utf-8 44.3842ms
+2023-09-25 22:24:01.233 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/b78edbba - -
+2023-09-25 22:24:01.236 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Get (ZipLink.API)'
+2023-09-25 22:24:01.236 +05:00 [INF] Route matched with {action = "Get", controller = "Url"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-25 22:24:01.240 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-25 22:24:01.245 +05:00 [INF] Executed DbCommand (5ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedOn], [u].[ExpiryDateTime], [u].[IsDeleted], [u].[LongURL], [u].[Numberofclicks], [u].[ShortURL], [u].[UpdatedOn]
+FROM [Urls] AS [u]
+WHERE (([u].[ShortURL] = @__url_0) AND ([u].[IsDeleted] = CAST(0 AS bit))) AND ([u].[ExpiryDateTime] > GETDATE())
+2023-09-25 22:24:01.253 +05:00 [INF] Executed DbCommand (7ms) [Parameters=[@p7='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Int64), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Urls] SET [CreatedOn] = @p0, [ExpiryDateTime] = @p1, [IsDeleted] = @p2, [LongURL] = @p3, [Numberofclicks] = @p4, [ShortURL] = @p5, [UpdatedOn] = @p6
+WHERE [Id] = @p7;
+SELECT @@ROWCOUNT;
+2023-09-25 22:24:01.254 +05:00 [INF] Executing RedirectResult, redirecting to https://www.youtube.com/watch?v=k8-Chcvn1FY&ab_channel=Jonas_Macht.
+2023-09-25 22:24:01.254 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Get (ZipLink.API) in 17.6277ms
+2023-09-25 22:24:01.254 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Get (ZipLink.API)'
+2023-09-25 22:24:01.255 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/b78edbba - - - 302 0 - 22.2819ms
+2023-09-25 22:26:42.295 +05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - -
+2023-09-25 22:26:42.296 +05:00 [INF] CORS policy execution successful.
+2023-09-25 22:26:42.296 +05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - - - 204 - - 1.1042ms
+2023-09-25 22:26:42.310 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/v1/Url application/json 68
+2023-09-25 22:26:42.310 +05:00 [INF] CORS policy execution successful.
+2023-09-25 22:26:42.311 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 22:26:42.311 +05:00 [INF] Route matched with {action = "Post", controller = "Url"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-25 22:26:42.313 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-25 22:26:42.332 +05:00 [INF] Executed DbCommand (17ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Urls] AS [u]
+        WHERE [u].[ShortURL] = @__url_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-09-25 22:26:42.340 +05:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Int64), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Urls] ([CreatedOn], [ExpiryDateTime], [IsDeleted], [LongURL], [Numberofclicks], [ShortURL], [UpdatedOn])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [Id]
+FROM [Urls]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-09-25 22:26:42.342 +05:00 [INF] Executing OkObjectResult, writing value of type 'ZipLink.API.Models.Response'.
+2023-09-25 22:26:42.343 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Post (ZipLink.API) in 32.5343ms
+2023-09-25 22:26:42.344 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 22:26:42.344 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/v1/Url application/json 68 - 200 - application/json;+charset=utf-8 34.5173ms
+2023-09-25 22:29:01.647 +05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - -
+2023-09-25 22:29:01.648 +05:00 [INF] CORS policy execution successful.
+2023-09-25 22:29:01.648 +05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - - - 204 - - 1.2367ms
+2023-09-25 22:29:01.664 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/v1/Url application/json 49
+2023-09-25 22:29:01.665 +05:00 [INF] CORS policy execution successful.
+2023-09-25 22:29:01.665 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 22:29:01.665 +05:00 [INF] Route matched with {action = "Post", controller = "Url"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-25 22:29:01.668 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-25 22:29:01.693 +05:00 [INF] Executed DbCommand (24ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Urls] AS [u]
+        WHERE [u].[ShortURL] = @__url_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-09-25 22:29:01.700 +05:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Int64), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Urls] ([CreatedOn], [ExpiryDateTime], [IsDeleted], [LongURL], [Numberofclicks], [ShortURL], [UpdatedOn])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [Id]
+FROM [Urls]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-09-25 22:29:01.702 +05:00 [INF] Executing OkObjectResult, writing value of type 'ZipLink.API.Models.Response'.
+2023-09-25 22:29:01.702 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Post (ZipLink.API) in 36.8332ms
+2023-09-25 22:29:01.702 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 22:29:01.702 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/v1/Url application/json 49 - 200 - application/json;+charset=utf-8 38.6011ms
+2023-09-25 22:29:09.214 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/8a8be5c3 - -
+2023-09-25 22:29:09.215 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Get (ZipLink.API)'
+2023-09-25 22:29:09.216 +05:00 [INF] Route matched with {action = "Get", controller = "Url"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-25 22:29:09.217 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-25 22:29:09.224 +05:00 [INF] Executed DbCommand (6ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedOn], [u].[ExpiryDateTime], [u].[IsDeleted], [u].[LongURL], [u].[Numberofclicks], [u].[ShortURL], [u].[UpdatedOn]
+FROM [Urls] AS [u]
+WHERE (([u].[ShortURL] = @__url_0) AND ([u].[IsDeleted] = CAST(0 AS bit))) AND ([u].[ExpiryDateTime] > GETDATE())
+2023-09-25 22:29:09.233 +05:00 [INF] Executed DbCommand (8ms) [Parameters=[@p7='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Int64), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Urls] SET [CreatedOn] = @p0, [ExpiryDateTime] = @p1, [IsDeleted] = @p2, [LongURL] = @p3, [Numberofclicks] = @p4, [ShortURL] = @p5, [UpdatedOn] = @p6
+WHERE [Id] = @p7;
+SELECT @@ROWCOUNT;
+2023-09-25 22:29:09.234 +05:00 [INF] Executing RedirectResult, redirecting to https://roadmap.sh/software-design-architecture.
+2023-09-25 22:29:09.234 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Get (ZipLink.API) in 18.4528ms
+2023-09-25 22:29:09.234 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Get (ZipLink.API)'
+2023-09-25 22:29:09.235 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/8a8be5c3 - - - 302 0 - 21.8765ms
+2023-09-25 23:36:49.826 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/8a8be5c3 - -
+2023-09-25 23:36:49.828 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Get (ZipLink.API)'
+2023-09-25 23:36:49.828 +05:00 [INF] Route matched with {action = "Get", controller = "Url"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-25 23:36:49.832 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-25 23:36:49.850 +05:00 [INF] Executed DbCommand (8ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedOn], [u].[ExpiryDateTime], [u].[IsDeleted], [u].[LongURL], [u].[Numberofclicks], [u].[ShortURL], [u].[UpdatedOn]
+FROM [Urls] AS [u]
+WHERE (([u].[ShortURL] = @__url_0) AND ([u].[IsDeleted] = CAST(0 AS bit))) AND ([u].[ExpiryDateTime] > GETDATE())
+2023-09-25 23:36:49.857 +05:00 [INF] Executed DbCommand (5ms) [Parameters=[@p7='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Int64), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Urls] SET [CreatedOn] = @p0, [ExpiryDateTime] = @p1, [IsDeleted] = @p2, [LongURL] = @p3, [Numberofclicks] = @p4, [ShortURL] = @p5, [UpdatedOn] = @p6
+WHERE [Id] = @p7;
+SELECT @@ROWCOUNT;
+2023-09-25 23:36:49.857 +05:00 [INF] Executing RedirectResult, redirecting to https://roadmap.sh/software-design-architecture.
+2023-09-25 23:36:49.857 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Get (ZipLink.API) in 29.1368ms
+2023-09-25 23:36:49.858 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Get (ZipLink.API)'
+2023-09-25 23:36:49.858 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/8a8be5c3 - - - 302 0 - 32.2019ms
+2023-09-25 23:37:45.896 +05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - -
+2023-09-25 23:37:45.897 +05:00 [INF] CORS policy execution successful.
+2023-09-25 23:37:45.897 +05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - - - 204 - - 1.3555ms
+2023-09-25 23:37:45.915 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/v1/Url application/json 26
+2023-09-25 23:37:45.915 +05:00 [INF] CORS policy execution successful.
+2023-09-25 23:37:45.916 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 23:37:45.916 +05:00 [INF] Route matched with {action = "Post", controller = "Url"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-25 23:37:45.917 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-25 23:37:46.002 +05:00 [INF] Executed DbCommand (83ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Urls] AS [u]
+        WHERE [u].[ShortURL] = @__url_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-09-25 23:37:46.011 +05:00 [INF] Executed DbCommand (8ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Int64), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Urls] ([CreatedOn], [ExpiryDateTime], [IsDeleted], [LongURL], [Numberofclicks], [ShortURL], [UpdatedOn])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [Id]
+FROM [Urls]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-09-25 23:37:46.013 +05:00 [INF] Executing OkObjectResult, writing value of type 'ZipLink.API.Models.Response'.
+2023-09-25 23:37:46.013 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Post (ZipLink.API) in 97.6534ms
+2023-09-25 23:37:46.014 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 23:37:46.014 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/v1/Url application/json 26 - 200 - application/json;+charset=utf-8 99.2570ms
+2023-09-25 23:44:24.938 +05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - -
+2023-09-25 23:44:24.938 +05:00 [INF] CORS policy execution successful.
+2023-09-25 23:44:24.940 +05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7224/api/v1/Url - - - 204 - - 2.1068ms
+2023-09-25 23:44:24.944 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/v1/Url application/json 49
+2023-09-25 23:44:24.944 +05:00 [INF] CORS policy execution successful.
+2023-09-25 23:44:24.944 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 23:44:24.945 +05:00 [INF] Route matched with {action = "Post", controller = "Url"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(System.String) on controller ZipLink.API.Controllers.UrlController (ZipLink.API).
+2023-09-25 23:44:24.947 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-25 23:44:24.971 +05:00 [INF] Executed DbCommand (15ms) [Parameters=[@__url_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Urls] AS [u]
+        WHERE [u].[ShortURL] = @__url_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-09-25 23:44:24.974 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Int64), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Urls] ([CreatedOn], [ExpiryDateTime], [IsDeleted], [LongURL], [Numberofclicks], [ShortURL], [UpdatedOn])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [Id]
+FROM [Urls]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-09-25 23:44:24.975 +05:00 [INF] Executing OkObjectResult, writing value of type 'ZipLink.API.Models.Response'.
+2023-09-25 23:44:24.975 +05:00 [INF] Executed action ZipLink.API.Controllers.UrlController.Post (ZipLink.API) in 28.6132ms
+2023-09-25 23:44:24.975 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.UrlController.Post (ZipLink.API)'
+2023-09-25 23:44:24.975 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/v1/Url application/json 49 - 200 - application/json;+charset=utf-8 31.0316ms

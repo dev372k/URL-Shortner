@@ -1,0 +1,14 @@
+C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.Core\bin\Debug\net6.0\ZipLink.Core.deps.json
+C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.Core\bin\Debug\net6.0\ZipLink.Core.runtimeconfig.json
+C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.Core\bin\Debug\net6.0\ZipLink.Core.dll
+C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.Core\bin\Debug\net6.0\ZipLink.Core.pdb
+C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.Core\obj\Debug\net6.0\ZipLink.Core.csproj.AssemblyReference.cache
+C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.Core\obj\Debug\net6.0\ZipLink.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.Core\obj\Debug\net6.0\ZipLink.Core.AssemblyInfoInputs.cache
+C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.Core\obj\Debug\net6.0\ZipLink.Core.AssemblyInfo.cs
+C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.Core\obj\Debug\net6.0\ZipLink.Core.csproj.CoreCompileInputs.cache
+C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.Core\obj\Debug\net6.0\ZipLink.Core.dll
+C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.Core\obj\Debug\net6.0\refint\ZipLink.Core.dll
+C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.Core\obj\Debug\net6.0\ZipLink.Core.pdb
+C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.Core\obj\Debug\net6.0\ZipLink.Core.genruntimeconfig.cache
+C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.Core\obj\Debug\net6.0\ref\ZipLink.Core.dll

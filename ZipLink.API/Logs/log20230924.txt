@@ -1,0 +1,60 @@
+2023-09-24 03:25:45.163 +05:00 [INF] Now listening on: https://localhost:7224
+2023-09-24 03:25:45.689 +05:00 [INF] Now listening on: http://localhost:5091
+2023-09-24 03:25:45.703 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-24 03:25:45.705 +05:00 [INF] Hosting environment: Development
+2023-09-24 03:25:45.705 +05:00 [INF] Content root path: C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\
+2023-09-24 03:25:47.486 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.html - -
+2023-09-24 03:25:48.898 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - -
+2023-09-24 03:25:48.921 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 19.5602ms
+2023-09-24 03:25:48.921 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.html - - - 200 - text/html;charset=utf-8 1564.8706ms
+2023-09-24 03:25:49.315 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - -
+2023-09-24 03:25:49.435 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 120.6432ms
+2023-09-24 03:25:49.634 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - -
+2023-09-24 03:25:49.929 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 295.0228ms
+2023-09-24 03:25:53.045 +05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7224/chat-hub - -
+2023-09-24 03:25:53.072 +05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7224/chat-hub - - - 401 0 - 27.4771ms
+2023-09-24 03:25:57.370 +05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7224/chat-hub - -
+2023-09-24 03:25:57.371 +05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7224/chat-hub - - - 401 0 - 0.5792ms
+2023-09-24 03:25:58.358 +05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7224/chat-hub - -
+2023-09-24 03:25:58.359 +05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7224/chat-hub - - - 401 0 - 1.1276ms
+2023-09-24 03:25:59.354 +05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7224/chat-hub - -
+2023-09-24 03:25:59.355 +05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7224/chat-hub - - - 401 0 - 1.1392ms
+2023-09-24 03:26:00.345 +05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7224/chat-hub - -
+2023-09-24 03:26:00.345 +05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7224/chat-hub - - - 401 0 - 0.4566ms
+2023-09-24 03:26:01.373 +05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7224/chat-hub - -
+2023-09-24 03:26:01.373 +05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7224/chat-hub - - - 401 0 - 0.3173ms
+2023-09-24 03:26:13.653 +05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7224/chat-hub - -
+2023-09-24 03:26:19.425 +05:00 [INF] Executing endpoint 'chat-hub'
+2023-09-24 23:40:48.568 +05:00 [INF] Executed endpoint 'chat-hub'
+2023-09-24 23:40:55.579 +05:00 [INF] Request finished HTTP/1.1 GET https://localhost:7224/chat-hub - - - 101 - - 72881928.9024ms
+2023-09-24 23:41:01.080 +05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7224/chat-hub - -
+2023-09-24 23:41:06.907 +05:00 [INF] Executing endpoint 'chat-hub'
+2023-09-24 23:42:49.324 +05:00 [INF] Now listening on: https://localhost:7224
+2023-09-24 23:42:49.399 +05:00 [INF] Now listening on: http://localhost:5091
+2023-09-24 23:42:49.412 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-24 23:42:49.414 +05:00 [INF] Hosting environment: Development
+2023-09-24 23:42:49.414 +05:00 [INF] Content root path: C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\
+2023-09-24 23:42:51.147 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.html - -
+2023-09-24 23:42:52.569 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.html - - - 200 - text/html;charset=utf-8 1432.8973ms
+2023-09-24 23:42:52.595 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - -
+2023-09-24 23:42:52.611 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 16.0225ms
+2023-09-24 23:42:53.252 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - -
+2023-09-24 23:42:53.306 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 54.6852ms
+2023-09-24 23:42:53.786 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - -
+2023-09-24 23:42:54.126 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 339.8759ms
+2023-09-24 23:42:55.788 +05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7224/chat-hub - -
+2023-09-24 23:46:51.235 +05:00 [INF] Now listening on: https://localhost:7224
+2023-09-24 23:46:51.464 +05:00 [INF] Now listening on: http://localhost:5091
+2023-09-24 23:46:51.474 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-24 23:46:51.475 +05:00 [INF] Hosting environment: Development
+2023-09-24 23:46:51.475 +05:00 [INF] Content root path: C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\
+2023-09-24 23:46:52.429 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.html - -
+2023-09-24 23:46:53.524 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - -
+2023-09-24 23:46:53.525 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.html - - - 200 - text/html;charset=utf-8 1106.6215ms
+2023-09-24 23:46:53.546 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 21.9048ms
+2023-09-24 23:46:53.871 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - -
+2023-09-24 23:46:53.932 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 60.5976ms
+2023-09-24 23:46:54.169 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - -
+2023-09-24 23:46:54.353 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 184.2716ms
+2023-09-24 23:46:56.931 +05:00 [INF] Request starting HTTP/1.1 GET https://localhost:7224/chat-hub - -
+2023-09-24 23:47:27.402 +05:00 [INF] Executing endpoint 'chat-hub'

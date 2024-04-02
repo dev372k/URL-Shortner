@@ -1,0 +1,433 @@
+2023-09-19 22:58:16.363 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-19 22:58:33.888 +05:00 [INF] Entity Framework Core 6.0.15 initialized 'ApplicationDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.15' with options: None
+2023-09-19 22:58:35.041 +05:00 [INF] Executed DbCommand (475ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+CREATE DATABASE [ZipLink_DB_Stg];
+2023-09-19 22:58:35.169 +05:00 [INF] Executed DbCommand (118ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [ZipLink_DB_Stg] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+2023-09-19 22:58:35.204 +05:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-09-19 22:58:35.482 +05:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+2023-09-19 22:58:35.487 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-09-19 22:58:35.553 +05:00 [INF] Executed DbCommand (39ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-09-19 22:58:35.569 +05:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-09-19 22:58:35.600 +05:00 [INF] Applying migration '20230919175816_Initial Migration'.
+2023-09-19 22:58:35.635 +05:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [MyProperty] (
+    [Id] int NOT NULL IDENTITY,
+    [LongURL] nvarchar(max) NOT NULL,
+    [ShortURL] nvarchar(max) NOT NULL,
+    [ExpiryDateTime] datetime2 NOT NULL,
+    [CreatedOn] datetime2 NOT NULL,
+    [UpdatedOn] datetime2 NOT NULL,
+    [IsDeleted] bit NOT NULL,
+    CONSTRAINT [PK_MyProperty] PRIMARY KEY ([Id])
+);
+2023-09-19 22:58:35.641 +05:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20230919175816_Initial Migration', N'6.0.15');
+2023-09-19 22:58:58.405 +05:00 [FTL] Application startup exception
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'ZipLink.API.Extensions.CustomMiddleware'.
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass5_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.<ConfigureApplication>b__27_0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2023-09-19 23:00:08.701 +05:00 [FTL] Application startup exception
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'ZipLink.API.Extensions.CustomMiddleware'.
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass5_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.<ConfigureApplication>b__27_0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2023-09-19 23:00:48.964 +05:00 [FTL] Application startup exception
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'ZipLink.API.Extensions.CustomMiddleware'.
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass5_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.<ConfigureApplication>b__27_0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2023-09-19 23:03:36.479 +05:00 [INF] Now listening on: https://localhost:7224
+2023-09-19 23:03:36.559 +05:00 [INF] Now listening on: http://localhost:5091
+2023-09-19 23:03:36.571 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-19 23:03:36.572 +05:00 [INF] Hosting environment: Development
+2023-09-19 23:03:36.572 +05:00 [INF] Content root path: C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\
+2023-09-19 23:03:41.093 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger - -
+2023-09-19 23:03:41.471 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger - - - 301 0 - 389.8212ms
+2023-09-19 23:03:41.540 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.html - -
+2023-09-19 23:03:42.264 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/swagger-ui.css - -
+2023-09-19 23:03:42.265 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/swagger-ui-bundle.js - -
+2023-09-19 23:03:42.269 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/swagger-ui-standalone-preset.js - -
+2023-09-19 23:03:42.329 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - -
+2023-09-19 23:03:42.383 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 53.2766ms
+2023-09-19 23:03:42.383 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.html - - - 200 - text/html;charset=utf-8 843.3238ms
+2023-09-19 23:03:42.408 +05:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-09-19 23:03:42.408 +05:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-09-19 23:03:42.629 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/swagger-ui.css - - - 200 143632 text/css 365.2192ms
+2023-09-19 23:03:42.629 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 360.4580ms
+2023-09-19 23:03:42.657 +05:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-09-19 23:03:42.658 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 392.2413ms
+2023-09-19 23:03:42.800 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - -
+2023-09-19 23:03:42.895 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 94.2525ms
+2023-09-19 23:03:43.019 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/favicon-32x32.png - -
+2023-09-19 23:03:43.019 +05:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-09-19 23:03:43.019 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/favicon-32x32.png - - - 200 628 image/png 0.7899ms
+2023-09-19 23:03:44.286 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - -
+2023-09-19 23:03:44.500 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 217.0842ms
+2023-09-19 23:03:52.765 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7224/URL application/json 6
+2023-09-19 23:04:00.244 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7224/URL application/json 6 - 401 0 - 7479.1926ms
+2023-09-19 23:04:26.333 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7224/URL application/json 6
+2023-09-19 23:04:35.704 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7224/URL application/json 6 - 401 0 - 9370.7508ms
+2023-09-19 23:05:35.612 +05:00 [INF] Now listening on: https://localhost:7224
+2023-09-19 23:05:37.015 +05:00 [INF] Now listening on: http://localhost:5091
+2023-09-19 23:05:37.083 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-19 23:05:37.085 +05:00 [INF] Hosting environment: Development
+2023-09-19 23:05:37.085 +05:00 [INF] Content root path: C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\
+2023-09-19 23:05:37.415 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.html - -
+2023-09-19 23:05:38.847 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.html - - - 200 - text/html;charset=utf-8 1457.0961ms
+2023-09-19 23:05:38.885 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - -
+2023-09-19 23:05:38.898 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 13.5401ms
+2023-09-19 23:05:39.681 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - -
+2023-09-19 23:05:39.754 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 72.2612ms
+2023-09-19 23:05:40.266 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - -
+2023-09-19 23:05:40.677 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 410.7596ms
+2023-09-19 23:05:51.268 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7224/URL application/json 8
+2023-09-19 23:05:59.373 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.URLController.Post (ZipLink.API)'
+2023-09-19 23:05:59.472 +05:00 [INF] Route matched with {action = "Post", controller = "URL"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(System.String) on controller ZipLink.API.Controllers.URLController (ZipLink.API).
+2023-09-19 23:06:07.004 +05:00 [INF] Executed action ZipLink.API.Controllers.URLController.Post (ZipLink.API) in 7516.4593ms
+2023-09-19 23:06:07.125 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.URLController.Post (ZipLink.API)'
+2023-09-19 23:06:09.570 +05:00 [ERR] Error Message: System.NotImplementedException: The method or operation is not implemented.
+   at ZipLink.Infrastructure.Interfaces.UrlServiceRepo.CreateURL(String url) in C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.Infrastructure\Interfaces\UrlServiceRepo.cs:line 23
+   at ZipLink.API.Controllers.URLController.Post(String url) in C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\Controllers\URLController.cs:line 21
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at ZipLink.API.Extensions.CustomMiddleware.Invoke(HttpContext context) in C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\Extensions\CustomMiddleware.cs:line 24
+ Error Detail: 
+2023-09-19 23:06:09.588 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7224/URL application/json 8 - 200 - application/json;+charset=utf-8 18320.6037ms
+2023-09-19 23:11:34.669 +05:00 [INF] Now listening on: https://localhost:7224
+2023-09-19 23:11:34.808 +05:00 [INF] Now listening on: http://localhost:5091
+2023-09-19 23:11:34.826 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-19 23:11:34.828 +05:00 [INF] Hosting environment: Development
+2023-09-19 23:11:34.828 +05:00 [INF] Content root path: C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\
+2023-09-19 23:11:37.116 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.html - -
+2023-09-19 23:11:38.105 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - -
+2023-09-19 23:11:38.128 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 17.3709ms
+2023-09-19 23:11:38.153 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.html - - - 200 - text/html;charset=utf-8 1042.8793ms
+2023-09-19 23:11:38.568 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - -
+2023-09-19 23:11:38.655 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 86.6308ms
+2023-09-19 23:11:38.909 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - -
+2023-09-19 23:11:39.287 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 377.9870ms
+2023-09-19 23:11:47.300 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/v1/URL application/json 8
+2023-09-19 23:11:47.330 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.URLController.Post (ZipLink.API)'
+2023-09-19 23:11:47.442 +05:00 [INF] Route matched with {action = "Post", controller = "URL"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(System.String) on controller ZipLink.API.Controllers.URLController (ZipLink.API).
+2023-09-19 23:11:54.622 +05:00 [INF] Executed action ZipLink.API.Controllers.URLController.Post (ZipLink.API) in 7169.5801ms
+2023-09-19 23:11:54.761 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.URLController.Post (ZipLink.API)'
+2023-09-19 23:11:55.365 +05:00 [ERR] Error Message: System.NotImplementedException: The method or operation is not implemented.
+   at ZipLink.Infrastructure.Interfaces.UrlServiceRepo.CreateURL(String url) in C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.Infrastructure\Interfaces\UrlServiceRepo.cs:line 23
+   at ZipLink.API.Controllers.URLController.Post(String url) in C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\Controllers\URLController.cs:line 21
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at ZipLink.API.Extensions.CustomMiddleware.Invoke(HttpContext context) in C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\Extensions\CustomMiddleware.cs:line 27
+ Error Detail: 
+2023-09-19 23:11:55.378 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/v1/URL application/json 8 - 200 - application/json;+charset=utf-8 8078.4638ms
+2023-09-19 23:12:13.444 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/v1/URL application/json 8
+2023-09-19 23:12:13.446 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.URLController.Post (ZipLink.API)'
+2023-09-19 23:12:13.446 +05:00 [INF] Route matched with {action = "Post", controller = "URL"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(System.String) on controller ZipLink.API.Controllers.URLController (ZipLink.API).
+2023-09-19 23:12:13.874 +05:00 [INF] Executed action ZipLink.API.Controllers.URLController.Post (ZipLink.API) in 427.3776ms
+2023-09-19 23:12:14.029 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.URLController.Post (ZipLink.API)'
+2023-09-19 23:12:14.212 +05:00 [ERR] Error Message: System.NotImplementedException: The method or operation is not implemented.
+   at ZipLink.Infrastructure.Interfaces.UrlServiceRepo.CreateURL(String url) in C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.Infrastructure\Interfaces\UrlServiceRepo.cs:line 23
+   at ZipLink.API.Controllers.URLController.Post(String url) in C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\Controllers\URLController.cs:line 21
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at ZipLink.API.Extensions.CustomMiddleware.Invoke(HttpContext context) in C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\Extensions\CustomMiddleware.cs:line 27
+ Error Detail: 
+2023-09-19 23:12:14.212 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/v1/URL application/json 8 - 200 - application/json;+charset=utf-8 767.9504ms
+2023-09-19 23:28:12.362 +05:00 [INF] Now listening on: https://localhost:7224
+2023-09-19 23:28:12.427 +05:00 [INF] Now listening on: http://localhost:5091
+2023-09-19 23:28:12.435 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-19 23:28:12.436 +05:00 [INF] Hosting environment: Development
+2023-09-19 23:28:12.436 +05:00 [INF] Content root path: C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\
+2023-09-19 23:28:13.691 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.html - -
+2023-09-19 23:28:14.633 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - -
+2023-09-19 23:28:14.640 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.html - - - 200 - text/html;charset=utf-8 962.1394ms
+2023-09-19 23:28:14.640 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 6.7792ms
+2023-09-19 23:28:15.023 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - -
+2023-09-19 23:28:15.063 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 39.7894ms
+2023-09-19 23:28:15.291 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - -
+2023-09-19 23:28:15.463 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 172.6404ms
+2023-09-19 23:39:38.599 +05:00 [INF] Now listening on: https://localhost:7224
+2023-09-19 23:39:38.662 +05:00 [INF] Now listening on: http://localhost:5091
+2023-09-19 23:39:38.671 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-19 23:39:38.671 +05:00 [INF] Hosting environment: Development
+2023-09-19 23:39:38.671 +05:00 [INF] Content root path: C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\
+2023-09-19 23:39:41.817 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.html - -
+2023-09-19 23:39:42.885 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - -
+2023-09-19 23:39:42.896 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.html - - - 200 - text/html;charset=utf-8 1090.9604ms
+2023-09-19 23:39:42.913 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 28.0589ms
+2023-09-19 23:39:43.238 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - -
+2023-09-19 23:39:43.270 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 31.3035ms
+2023-09-19 23:39:43.494 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - -
+2023-09-19 23:39:43.616 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 121.4356ms
+2023-09-19 23:39:57.114 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7224/api/v1/URL application/json 8
+2023-09-19 23:39:57.135 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.URLController.Post (ZipLink.API)'
+2023-09-19 23:39:57.198 +05:00 [INF] Route matched with {action = "Post", controller = "URL"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(System.String) on controller ZipLink.API.Controllers.URLController (ZipLink.API).
+2023-09-19 23:39:58.327 +05:00 [INF] Executed action ZipLink.API.Controllers.URLController.Post (ZipLink.API) in 1116.4546ms
+2023-09-19 23:39:58.491 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.URLController.Post (ZipLink.API)'
+2023-09-19 23:39:58.880 +05:00 [ERR] Error Message: System.NotImplementedException: The method or operation is not implemented.
+   at ZipLink.Infrastructure.Interfaces.UrlServiceRepo.CreateURL(String url) in C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.Infrastructure\Interfaces\UrlServiceRepo.cs:line 23
+   at ZipLink.API.Controllers.URLController.Post(String url) in C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\Controllers\URLController.cs:line 21
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at ZipLink.API.Extensions.CustomMiddleware.Invoke(HttpContext context) in C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\Extensions\CustomMiddleware.cs:line 26
+ Error Detail: 
+2023-09-19 23:39:58.916 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7224/api/v1/URL application/json 8 - 500 - application/json;+charset=utf-8 1801.6098ms
+2023-09-19 23:42:03.526 +05:00 [INF] Now listening on: https://localhost:7224
+2023-09-19 23:42:03.600 +05:00 [INF] Now listening on: http://localhost:5091
+2023-09-19 23:42:03.621 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-19 23:42:03.625 +05:00 [INF] Hosting environment: Development
+2023-09-19 23:42:03.626 +05:00 [INF] Content root path: C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\
+2023-09-19 23:42:06.892 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.html - -
+2023-09-19 23:42:07.723 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.html - - - 200 - text/html;charset=utf-8 837.4830ms
+2023-09-19 23:42:07.736 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - -
+2023-09-19 23:42:07.740 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 4.2620ms
+2023-09-19 23:42:07.948 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - -
+2023-09-19 23:42:07.995 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 45.9242ms
+2023-09-19 23:42:08.178 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - -
+2023-09-19 23:42:08.326 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 147.9202ms
+2023-09-19 23:45:38.820 +05:00 [INF] Now listening on: https://localhost:7224
+2023-09-19 23:45:38.865 +05:00 [INF] Now listening on: http://localhost:5091
+2023-09-19 23:45:38.873 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-19 23:45:38.874 +05:00 [INF] Hosting environment: Development
+2023-09-19 23:45:38.874 +05:00 [INF] Content root path: C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\
+2023-09-19 23:45:40.860 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.html - -
+2023-09-19 23:45:41.692 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - -
+2023-09-19 23:45:41.703 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.html - - - 200 - text/html;charset=utf-8 853.1644ms
+2023-09-19 23:45:41.703 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 9.0412ms
+2023-09-19 23:45:41.941 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - -
+2023-09-19 23:45:41.968 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 27.6157ms
+2023-09-19 23:45:42.158 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - -
+2023-09-19 23:45:42.298 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 139.7685ms
+2023-09-19 23:45:59.209 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/api/App - -
+2023-09-19 23:45:59.223 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.AppController.Get (ZipLink.API)'
+2023-09-19 23:45:59.285 +05:00 [INF] Route matched with {action = "Get", controller = "App"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller ZipLink.API.Controllers.AppController (ZipLink.API).
+2023-09-19 23:45:59.418 +05:00 [INF] Executed action ZipLink.API.Controllers.AppController.Get (ZipLink.API) in 125.1503ms
+2023-09-19 23:45:59.477 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.AppController.Get (ZipLink.API)'
+2023-09-19 23:45:59.594 +05:00 [ERR] Error Message: System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckService' while attempting to activate 'ZipLink.API.Controllers.AppController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method9(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at ZipLink.API.Extensions.CustomMiddleware.Invoke(HttpContext context) in C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\Extensions\CustomMiddleware.cs:line 26
+ Error Detail: 
+2023-09-19 23:45:59.610 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/api/App - - - 500 - application/json;+charset=utf-8 401.1660ms
+2023-09-19 23:46:10.379 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/api/App - -
+2023-09-19 23:46:10.380 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.AppController.Get (ZipLink.API)'
+2023-09-19 23:46:10.380 +05:00 [INF] Route matched with {action = "Get", controller = "App"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller ZipLink.API.Controllers.AppController (ZipLink.API).
+2023-09-19 23:46:10.470 +05:00 [INF] Executed action ZipLink.API.Controllers.AppController.Get (ZipLink.API) in 89.9045ms
+2023-09-19 23:46:10.528 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.AppController.Get (ZipLink.API)'
+2023-09-19 23:46:10.595 +05:00 [ERR] Error Message: System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckService' while attempting to activate 'ZipLink.API.Controllers.AppController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method9(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at ZipLink.API.Extensions.CustomMiddleware.Invoke(HttpContext context) in C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\Extensions\CustomMiddleware.cs:line 26
+ Error Detail: 
+2023-09-19 23:46:10.596 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/api/App - - - 500 - application/json;+charset=utf-8 217.0496ms
+2023-09-19 23:46:35.901 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/api/App - -
+2023-09-19 23:46:39.456 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.AppController.Get (ZipLink.API)'
+2023-09-19 23:46:39.456 +05:00 [INF] Route matched with {action = "Get", controller = "App"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller ZipLink.API.Controllers.AppController (ZipLink.API).
+2023-09-19 23:46:39.544 +05:00 [INF] Executed action ZipLink.API.Controllers.AppController.Get (ZipLink.API) in 88.0233ms
+2023-09-19 23:46:39.599 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.AppController.Get (ZipLink.API)'
+2023-09-19 23:46:44.466 +05:00 [ERR] Error Message: System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckService' while attempting to activate 'ZipLink.API.Controllers.AppController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method9(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at ZipLink.API.Extensions.CustomMiddleware.Invoke(HttpContext context) in C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\Extensions\CustomMiddleware.cs:line 26
+ Error Detail: 
+2023-09-19 23:46:44.467 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/api/App - - - 500 - application/json;+charset=utf-8 8565.8878ms
+2023-09-19 23:47:22.613 +05:00 [INF] Now listening on: https://localhost:7224
+2023-09-19 23:47:22.670 +05:00 [INF] Now listening on: http://localhost:5091
+2023-09-19 23:47:22.682 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-19 23:47:22.686 +05:00 [INF] Hosting environment: Development
+2023-09-19 23:47:22.686 +05:00 [INF] Content root path: C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\
+2023-09-19 23:47:23.925 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.html - -
+2023-09-19 23:47:24.512 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - -
+2023-09-19 23:47:24.522 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 9.5194ms
+2023-09-19 23:47:24.522 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.html - - - 200 - text/html;charset=utf-8 604.5269ms
+2023-09-19 23:47:24.783 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - -
+2023-09-19 23:47:24.819 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 36.0900ms
+2023-09-19 23:47:24.981 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - -
+2023-09-19 23:47:25.098 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 117.1228ms
+2023-09-19 23:47:37.286 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/api/App - -
+2023-09-19 23:47:39.478 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.AppController.Get (ZipLink.API)'
+2023-09-19 23:47:39.502 +05:00 [INF] Route matched with {action = "Get", controller = "App"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller ZipLink.API.Controllers.AppController (ZipLink.API).
+2023-09-19 23:47:41.438 +05:00 [INF] Get Health Information: Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport
+2023-09-19 23:47:41.452 +05:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport'.
+2023-09-19 23:47:41.546 +05:00 [INF] Executed action ZipLink.API.Controllers.AppController.Get (ZipLink.API) in 2035.5453ms
+2023-09-19 23:47:41.548 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.AppController.Get (ZipLink.API)'
+2023-09-19 23:47:41.703 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: StatusCode cannot be set because the response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ThrowResponseAlreadyStartedException(String value)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.Microsoft.AspNetCore.Http.Features.IHttpResponseFeature.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_StatusCode(Int32 value)
+   at ZipLink.API.Extensions.CustomMiddleware.Invoke(HttpContext context) in C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\Extensions\CustomMiddleware.cs:line 33
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-09-19 23:47:41.757 +05:00 [WRN] The response has already started, the error page middleware will not be executed.
+2023-09-19 23:47:41.828 +05:00 [ERR] Connection id "0HMTP83E75O59", Request id "0HMTP83E75O59:00000009": An unhandled exception was thrown by the application.
+System.InvalidOperationException: StatusCode cannot be set because the response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ThrowResponseAlreadyStartedException(String value)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.Microsoft.AspNetCore.Http.Features.IHttpResponseFeature.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_StatusCode(Int32 value)
+   at ZipLink.API.Extensions.CustomMiddleware.Invoke(HttpContext context) in C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\Extensions\CustomMiddleware.cs:line 33
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2023-09-19 23:47:41.833 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/api/App - - - 200 - application/json;+charset=utf-8 4547.6926ms
+2023-09-19 23:47:50.436 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/api/App - -
+2023-09-19 23:47:53.961 +05:00 [INF] Executing endpoint 'ZipLink.API.Controllers.AppController.Get (ZipLink.API)'
+2023-09-19 23:47:53.962 +05:00 [INF] Route matched with {action = "Get", controller = "App"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller ZipLink.API.Controllers.AppController (ZipLink.API).
+2023-09-19 23:48:07.106 +05:00 [INF] Get Health Information: Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport
+2023-09-19 23:48:22.579 +05:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport'.
+2023-09-19 23:48:22.579 +05:00 [INF] Executed action ZipLink.API.Controllers.AppController.Get (ZipLink.API) in 28617.3856ms
+2023-09-19 23:48:22.579 +05:00 [INF] Executed endpoint 'ZipLink.API.Controllers.AppController.Get (ZipLink.API)'
+2023-09-19 23:48:22.731 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: StatusCode cannot be set because the response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ThrowResponseAlreadyStartedException(String value)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.Microsoft.AspNetCore.Http.Features.IHttpResponseFeature.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_StatusCode(Int32 value)
+   at ZipLink.API.Extensions.CustomMiddleware.Invoke(HttpContext context) in C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\Extensions\CustomMiddleware.cs:line 33
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-09-19 23:48:22.731 +05:00 [WRN] The response has already started, the error page middleware will not be executed.
+2023-09-19 23:48:22.789 +05:00 [ERR] Connection id "0HMTP83E75O59", Request id "0HMTP83E75O59:0000000B": An unhandled exception was thrown by the application.
+System.InvalidOperationException: StatusCode cannot be set because the response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ThrowResponseAlreadyStartedException(String value)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.Microsoft.AspNetCore.Http.Features.IHttpResponseFeature.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_StatusCode(Int32 value)
+   at ZipLink.API.Extensions.CustomMiddleware.Invoke(HttpContext context) in C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\Extensions\CustomMiddleware.cs:line 33
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2023-09-19 23:48:22.790 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/api/App - - - 200 - application/json;+charset=utf-8 32354.0428ms
+2023-09-19 23:49:26.127 +05:00 [INF] Now listening on: https://localhost:7224
+2023-09-19 23:49:26.163 +05:00 [INF] Now listening on: http://localhost:5091
+2023-09-19 23:49:26.168 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-19 23:49:26.169 +05:00 [INF] Hosting environment: Development
+2023-09-19 23:49:26.169 +05:00 [INF] Content root path: C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.API\
+2023-09-19 23:49:27.178 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.html - -
+2023-09-19 23:49:27.770 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - -
+2023-09-19 23:49:27.779 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 8.5016ms
+2023-09-19 23:49:27.779 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.html - - - 200 - text/html;charset=utf-8 612.6581ms
+2023-09-19 23:49:30.191 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - -
+2023-09-19 23:49:30.521 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 331.0739ms
+2023-09-19 23:49:31.267 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - -
+2023-09-19 23:49:31.434 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 167.2154ms

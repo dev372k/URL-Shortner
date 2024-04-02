@@ -1,0 +1,15 @@
+C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.Infrastructure\bin\Release\net6.0\ZipLink.Infrastructure.deps.json
+C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.Infrastructure\bin\Release\net6.0\ZipLink.Infrastructure.dll
+C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.Infrastructure\bin\Release\net6.0\ZipLink.Infrastructure.pdb
+C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.Infrastructure\bin\Release\net6.0\ZipLink.Core.dll
+C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.Infrastructure\bin\Release\net6.0\ZipLink.Core.pdb
+C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.Infrastructure\obj\Release\net6.0\ZipLink.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.Infrastructure\obj\Release\net6.0\ZipLink.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.Infrastructure\obj\Release\net6.0\ZipLink.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.Infrastructure\obj\Release\net6.0\ZipLink.Infrastructure.AssemblyInfo.cs
+C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.Infrastructure\obj\Release\net6.0\ZipLink.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.Infrastructure\obj\Release\net6.0\ZipLink.Infrastructure.csproj.CopyComplete
+C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.Infrastructure\obj\Release\net6.0\ZipLink.Infrastructure.dll
+C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.Infrastructure\obj\Release\net6.0\refint\ZipLink.Infrastructure.dll
+C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.Infrastructure\obj\Release\net6.0\ZipLink.Infrastructure.pdb
+C:\Users\Digital Dividend\source\repos\ZipLink\ZipLink.Infrastructure\obj\Release\net6.0\ref\ZipLink.Infrastructure.dll

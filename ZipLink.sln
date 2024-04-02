@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZipLink.API", "ZipLink.API\ZipLink.API.csproj", "{FBB0781C-DD4C-4985-B26F-3EF37F1EB7C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZipLink.Infrastructure", "ZipLink.Infrastructure\ZipLink.Infrastructure.csproj", "{4CEAB878-4B80-4B15-97F8-FDDF729C6CF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZipLink.Core", "ZipLink.Core\ZipLink.Core.csproj", "{9EFB6D6C-60C9-4AB7-AADE-B9325CF71B45}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FBB0781C-DD4C-4985-B26F-3EF37F1EB7C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBB0781C-DD4C-4985-B26F-3EF37F1EB7C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBB0781C-DD4C-4985-B26F-3EF37F1EB7C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBB0781C-DD4C-4985-B26F-3EF37F1EB7C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CEAB878-4B80-4B15-97F8-FDDF729C6CF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CEAB878-4B80-4B15-97F8-FDDF729C6CF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CEAB878-4B80-4B15-97F8-FDDF729C6CF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CEAB878-4B80-4B15-97F8-FDDF729C6CF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EFB6D6C-60C9-4AB7-AADE-B9325CF71B45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EFB6D6C-60C9-4AB7-AADE-B9325CF71B45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EFB6D6C-60C9-4AB7-AADE-B9325CF71B45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EFB6D6C-60C9-4AB7-AADE-B9325CF71B45}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1A5AB7CA-E5C9-4F1E-860B-33920CCDB555}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,30 @@
+:root {
+    --blue: rgb(105, 105, 250);
+    --white: #ffffff;
+  }
+  
+@font-face { 
+    font-family: kenia-regular; 
+    src: url('Kenia-Regular.ttf'); 
+} 
+.logo{
+    font-family: kenia-regular;
+    cursor: pointer;
+}
+.logo::first-letter{
+    color: var(--blue) !important;
+}
+.btn-primary{
+    background: var(--blue) !important;
+}
+
+.form-control:focus{
+    box-shadow: none !important;
+    border: 1px solid var(--blue);
+}
+.ajs-button{
+    background: var(--blue) !important;
+    color: white !important;
+    border: none;
+    border-radius: 5px;
+}
